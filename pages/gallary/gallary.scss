@@ -1,0 +1,17 @@
+.gallary {
+  background: rgb(148, 31, 184);
+
+  &__container {
+    max-width: 400px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    background: #949e0a;
+  }
+
+  &__title {
+    color: #fff;
+    &_change {
+      color: rgb(9, 255, 0);
+    }
+  }
+}

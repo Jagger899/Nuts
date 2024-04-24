@@ -1,0 +1,179 @@
+.header {
+  padding: 10px 0 33px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 29px;
+  }
+
+  &__top-socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__top-svg {
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+
+    &:hover {
+      fill: red;
+    }
+
+    &:last-child {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__top-discount {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $greenColor;
+  }
+
+  &__top-user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 672px;
+  }
+
+  .enter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 234px;
+    // gap: 48px;
+
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      position: relative;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+
+      &:hover .enter__link-line {
+        transform: scale(1);
+      }
+    }
+
+    &__link-svg {
+      width: 11px;
+      height: 11px;
+    }
+
+    &__link-line {
+      position: absolute;
+      height: 2px;
+      background: $greenLightColor;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      transform: scale(0);
+      bottom: -2px;
+      transition: transform $animation;
+    }
+  }
+
+  .select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &__text {
+      font-weight: 500;
+      font-size: 13px;
+    }
+
+    &__menu {
+      position: absolute;
+      top: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      // background: $greenLightColor;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      border: 0.5px solid $greenLightColor;
+      transition: opacity $animation, visibility $animation;
+
+      &_open {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &__menu-item {
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      // color: $whiteColor;
+      white-space: nowrap;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 13px;
+
+      &_active {
+        color: $blackColor;
+        background: $greenLightColor;
+      }
+    }
+
+    &__svg {
+      width: 8px;
+      height: 6px;
+      transition: transform $animation;
+
+      &_rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom-logo-box {
+    
+  }
+
+
+
+
+  &__bottom-svg {
+    width: 31px;
+    height: 31px;
+  }
+
+  &__basket-svg{
+    width: 24px;
+    height: 24px;
+  }
+
+}
