@@ -24,28 +24,48 @@
 
 // import './src/assets/scss/main.scss';
 
-const select = document.querySelector(".select");
-const selectMenu = document.querySelector(".select__menu");
-const selectItem = document.querySelectorAll(".select__menu-item");
-const selectSvg = document.querySelector(".select__svg");
-const selectedText = document.querySelector(".select__text");
+// const select = document.querySelector(".select");
+// const selectMenu = document.querySelector(".select__menu");
+// const selectItem = document.querySelectorAll(".select__menu-item");
+// const selectSvg = document.querySelector(".select__svg");
+// const selectedText = document.querySelector(".select__text");
 
-select.addEventListener("click", () => {
-  selectSvg.classList.toggle("select__svg_rotate");
-  selectMenu.classList.toggle("select__menu_open");
-});
+// select.addEventListener("click", () => {
+//   selectSvg.classList.toggle("select__svg_rotate");
+//   selectMenu.classList.toggle("select__menu_open");
+// });
 
-selectItem.forEach((option) => {
-  option.addEventListener("click", () => {
-    selectedText.innerText = option.innerText;
+// selectItem.forEach((option) => {
+//   option.addEventListener("click", () => {
+//     selectedText.innerText = option.innerText;
 
-    // selectMenu.classList.remove("select__menu_open");
+//     // selectMenu.classList.remove("select__menu_open");
 
-    selectSvg.classList.remove("select__svg-arrow_rotate");
+//     selectSvg.classList.remove("select__svg-arrow_rotate");
 
-    selectItem.forEach((option) => {
-      option.classList.remove("select__menu-item_active");
-    });
-    option.classList.add("select__menu-item_active");
-  });
-});
+//     selectItem.forEach((option) => {
+//       option.classList.remove("select__menu-item_active");
+//     });
+//     option.classList.add("select__menu-item_active");
+//   });
+// });
+
+// import { selectLanguageWorking } from "/src/assets/js/components/selectLanguage";
+
+// document.addEventListener("DOMContentLoaded", function(){
+
+//   selectLanguageWorking();
+// })
+
+// const navLinks = document.querySelectorAll('.nav__link');
+
+// navLinks.forEach((link) => {
+//   link.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     navLinks.forEach((navLink) => {
+//       navLink.classList.remove('nav__link_active');
+//     });
+
+//     link.classList.add('nav__link_active');
+//   })
+// })
