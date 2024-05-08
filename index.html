@@ -1,20 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/assets/scss/main.scss">
-  <title>Main</title>
-</head>
-<body>
-  <div class="wrapper">
-    <load src="src/assets/html/components/header.html" class="header"/>
-    <load src="src/assets/html/components/sprite.html"/>
-    
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/scss/main.scss" />
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <load src="src/html/components/header.html" class="header" />
+      <load src="src/html/components/sprite.html" />
 
+      <main class="main">
 
-  
-  <script src="main.ts" type="module"></script>
-</body>
+        <!-- <section class="promo">
+
+          <div class="promo__container">
+            <div class="promo__content">
+              <load
+                src="src/html/components/promo/promo-title.html"
+                title="Орех Причерноморья"
+              />
+
+              <load
+                src="src/html/components/promo/promo-text.html"
+                text="Единственный в Украине сад совместного 
+выращивание фундука и грецкого ореха"
+              />
+
+              <a href="#" class="promo__video-link">
+                <svg class="promo__video-svg">
+                  <use href="#video-link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <img
+            class="promo__img"
+            src="src/assets/images/main/wood.png"
+            alt="photo"
+          />
+        </section> -->
+
+        <load src="src/html/components/promo/promo.html" imgSrc="src/assets/images/main/wood.png" class="promo"/>
+
+        <section class="section production">
+          <div class="production__container">
+            <h2 class="section__title">Продукция</h2>
+
+            <p class="section__descr">
+              Экологически чистые, качественные ядра грецкого ореха и фундука, а
+              также плоды шиповника в удобной, надежной, вакуумной упаковке
+              разного объема
+            </p>
+
+            <div class="cards">
+              <load src="src/html/components/production/card.html" class="card" imgSrc="src/assets/images/reused/nut-cofee.png"/>
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="src/ts/main.ts" type="module"></script>
+  </body>
 </html>

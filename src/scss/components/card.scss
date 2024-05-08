@@ -1,0 +1,99 @@
+.card {
+  padding: 20px 15px 20px 13px;
+  max-width: 410px;
+  border: 1px solid $greenColor;
+
+  &__img {
+    margin: 0 auto 19px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+  }
+
+  &__article {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: $greyColor;
+    margin-bottom: 25px;
+  }
+
+  &__descr {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 106%;
+    letter-spacing: 0.01em;
+    color: #000;
+    margin-bottom: 26px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__info-box {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  &__info-annot {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    font-family: "Montserrat", sans-serif;
+    color: $greyColor;
+  }
+
+  &__info-value {
+    font-weight: 600;
+    color: $greenColor;
+  }
+
+  &__weight-svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__package-svg {
+    width: 12px;
+    height: 17px;
+  }
+
+  &__payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+  }
+
+  &__price-number {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: $greenColor;
+  }
+
+  &__price-old-number {
+    color: $greyColor;
+    text-decoration: line-through;
+    font-size: 13px;
+  }
+}
