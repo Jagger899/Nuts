@@ -78,6 +78,41 @@
     }
   }
 
+  &__descr-text {
+    display: none;
+  }
+
+  &_second {
+    @include media-breakpoint-down(md) {
+      margin-top: 70px;
+    }
+    .promo__title {
+      font-weight: 800;
+      font-size: 45px;
+      letter-spacing: 0.01em;
+      text-align: center;
+      max-width: 1015px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+    }
+
+    .promo__text {
+      display: none;
+    }
+
+    .promo__descr-text {
+      display: block;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 24px;
+      letter-spacing: 0.01em;
+      color: $whiteColor;
+      margin-top: 28px;
+    }
+  }
+
   &__video-svg {
     width: 61px;
     height: 61px;

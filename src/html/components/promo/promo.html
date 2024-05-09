@@ -1,22 +1,17 @@
 <section class="{=$class}">
   <div class="promo__container">
     <div class="promo__content">
-      <load
-        src="src/html/components/promo/promo-title.html"
-        title="Орех Причерноморья"
-      />
+      <h1 class="promo__title">{=$title}</h1>
 
-      <load
-        src="src/html/components/promo/promo-text.html"
-        text="Единственный в Украине сад совместного 
-выращивание фундука и грецкого ореха"
-      />
+      <p class="promo__text">{=$text}</p>
 
       <a href="#" class="promo__video-link">
         <svg class="promo__video-svg">
           <use href="#video-link"></use>
         </svg>
       </a>
+
+      <p class="promo__descr-text">Cмотреть видео о производстве</p>
     </div>
   </div>
   <img class="promo__img" alt="photo" src="{=$imgSrc}" />
