@@ -1,10 +1,85 @@
 .card {
-  padding: 20px 15px 20px 13px;
+  padding: 20px 23px 14px 20px;
   max-width: 410px;
-  border: 1px solid $greenColor;
+  border: 1px solid $cardGreyBorderColor;
+  background: $greyCardColor;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    max-width: 350px;
+  }
+
+  // @include media-breakpoint-down(xs) {
+  //   max-width: 410px;
+  // }
+
+  &_active {
+    border: 1.5px solid $greenLightColor;
+    .card__search-svg {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &_with-tooltip {
+    .card__tooltip {
+      display: block;
+      position: absolute;
+      top: 21px;
+      left: -3px;
+    }
+  }
+
+  &__tooltip {
+    display: none;
+  }
+
+  &__search-svg {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 117px;
+    left: 175px;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $animation, visibility $animation;
+    cursor: pointer;
+  }
+
+  &__slider {
+    margin-bottom: 20px;
+  }
+
+  &__slider-svg {
+    width: 23px;
+    height: 23px;
+    fill: #c4c4c4;
+    transition: fill $animation;
+
+    &:hover {
+      fill: #337d5a;
+    }
+  }
+
+  .button-next,
+  .button-prev {
+    position: absolute;
+    top: 120px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .button-next {
+    right: 0;
+  }
 
   &__img {
     margin: 0 auto 19px;
+
+    &_cof {
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -18,7 +93,7 @@
     font-size: 15px;
     letter-spacing: 0.01em;
     color: $greyColor;
-    margin-bottom: 25px;
+    margin-bottom: 13px;
   }
 
   &__descr {
@@ -27,20 +102,30 @@
     line-height: 106%;
     letter-spacing: 0.01em;
     color: #000;
-    margin-bottom: 26px;
+    margin-bottom: 13px;
+    max-width: 240px;
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 29px;
   }
 
   &__info-box {
     display: flex;
     align-items: center;
     gap: 9px;
+
+    &:last-child {
+      margin-right: 12px;
+    }
+  }
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
   }
 
   &__info-annot {
@@ -86,7 +171,7 @@
 
   &__price-number {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 19px;
     letter-spacing: 0.01em;
     color: $greenColor;
   }
@@ -95,5 +180,9 @@
     color: $greyColor;
     text-decoration: line-through;
     font-size: 13px;
+  }
+
+  &__button {
+    width: 124px;
   }
 }

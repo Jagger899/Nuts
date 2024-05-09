@@ -17,8 +17,7 @@
   font-display: swap;
   font-family: "Montserrat";
   font-weight: 600;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("../assets/fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../assets/fonts/Montserrat-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -120,12 +119,18 @@ input {
 }
 
 .section {
+
   &__title {
     font-weight: 800;
     font-size: 45px;
     letter-spacing: 0.01em;
     color: $blackColor;
     text-align: center;
+    margin-bottom: 25px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 25px;
+    }
   }
 
   &__descr {
@@ -136,7 +141,8 @@ input {
     text-align: center;
     color: $blackColor;
     max-width: 616px;
-    margin: 0 auto 60px;
+    margin: 0 auto 66px;
+    line-height: 1.4;
   }
 }
 

@@ -301,6 +301,7 @@
     width: 100%;
     transform: translateX(-100%);
     transition: transform $animation;
+    z-index: 10;
 
     &_active {
       transform: translateX(0);

@@ -12,38 +12,11 @@
       <load src="src/html/components/sprite.html" />
 
       <main class="main">
-
-        <!-- <section class="promo">
-
-          <div class="promo__container">
-            <div class="promo__content">
-              <load
-                src="src/html/components/promo/promo-title.html"
-                title="Орех Причерноморья"
-              />
-
-              <load
-                src="src/html/components/promo/promo-text.html"
-                text="Единственный в Украине сад совместного 
-выращивание фундука и грецкого ореха"
-              />
-
-              <a href="#" class="promo__video-link">
-                <svg class="promo__video-svg">
-                  <use href="#video-link"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <img
-            class="promo__img"
-            src="src/assets/images/main/wood.png"
-            alt="photo"
-          />
-        </section> -->
-
-        <load src="src/html/components/promo/promo.html" imgSrc="src/assets/images/main/wood.png" class="promo"/>
+        <load
+          src="src/html/components/promo/promo.html"
+          imgSrc="src/assets/images/main/wood.png"
+          class="promo"
+        />
 
         <section class="section production">
           <div class="production__container">
@@ -56,9 +29,119 @@
             </p>
 
             <div class="cards">
-              <load src="src/html/components/production/card.html" class="card" imgSrc="src/assets/images/reused/nut-cofee.png"/>
+              <load
+                src="src/html/components/production/card.html"
+                class="card card_with-tooltip"
+                imgSrc="src/assets/images/reused/nut-cofee.png"
+                srcTooltip="src/assets/images/reused/action-tooltip.svg"
+                imgClass="card__img"
+              />
+
+              <load
+                src="src/html/components/production/card.html"
+                class="card card_with-tooltip"
+                imgSrc="src/assets/images/reused/nut-cofee.png"
+                srcTooltip="src/assets/images/reused/new-tooltip.svg"
+                imgClass="card__img"
+              />
+
+              <load
+                src="src/html/components/production/card.html"
+                class="card"
+                imgSrc="src/assets/images/reused/nut-cofee.png"
+                imgClass="card__img"
+              />
+
+              <load
+                src="src/html/components/production/card.html"
+                class="card"
+                imgSrc="src/assets/images/reused/nut-box.png"
+                imgClass="card__img card__img_cof"
+              />
+
+              <load
+                src="src/html/components/production/card.html"
+                class="card"
+                imgSrc="src/assets/images/reused/nut-box.png"
+                imgClass="card__img card__img_cof"
+              />
+
+              <load
+                src="src/html/components/production/card.html"
+                class="card"
+                imgSrc="src/assets/images/reused/nut-box.png"
+                imgClass="card__img card__img_cof"
+              />
             </div>
 
+            <a href="#" class="button button-white production__button">Перейти в магазин</a>
+          </div>
+        </section>
+
+        <section class="section info">
+          <div class="info__container">
+            <div class="info__inner">
+              <load
+                src="src/html/components/info/info-title.html"
+                title="О производителе"
+              />
+              <div class="info__descr-box">
+                <load
+                  src="src/html/components/info/info-descr-text-with-span.html"
+                  class="info__descr-text"
+                  coloryText="Сельскохозяйственный обслуживающий кооператив 
+                  “Орех Причерноморья”"
+                  descrText="выращивает смешанные сады 
+                    ореха грецкого с фундуком, а также ореха грецкого 
+                    с шиповником, на площади более 150 гектаров. "
+                  class="info__descr-text"
+                />
+
+                <load
+                  src="src/html/components/info/info-descr-text.html"
+                  descrText="Помимо этого кооператив занимается выращиванием 
+                  посадочного материала, саженцов привитого и непривитого 
+                  грецкого ореха, фундука и шиповника."
+                  class="info__descr-text"
+                />
+
+                <a href="#" class="button button-white info__button">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="swiper info__slider">
+              <div class="swiper-wrapper">
+                <load
+                  class="swiper-slide"
+                  src="src/html/components/info/info-swiper-slide.html"
+                  imgSrc="src/assets/images/reused/tractor-slider-1.png"
+                />
+
+                <load
+                  class="swiper-slide"
+                  src="src/html/components/info/info-swiper-slide.html"
+                  imgSrc="src/assets/images/reused/tractor-slider-2.png"
+                />
+
+                <load
+                  class="swiper-slide"
+                  src="src/html/components/info/info-swiper-slide.html"
+                  imgSrc="src/assets/images/reused/tractor-field.png"
+                />
+              </div>
+
+              <div class="info__button-prev">
+                <svg class="card__slider-svg info__button-svg">
+                  <use href="#button-prev"></use>
+                </svg>
+              </div>
+
+              <div class="info__button-next">
+                <svg class="card__slider-svg info__button-svg">
+                  <use href="#button-next"></use>
+                </svg>
+              </div>
+            </div>
           </div>
         </section>
       </main>

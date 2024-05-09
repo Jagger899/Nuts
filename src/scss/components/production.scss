@@ -1,5 +1,36 @@
 @import "./card.scss";
 
 .production {
-  padding: 54px 0 79px;
+  padding: 78px 0 79px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
+
+  .cards {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px 30px;
+    margin-bottom: 72px;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      gap: 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    width: 202px;
+    height: 52px;
+  }
 }
