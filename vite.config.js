@@ -8,7 +8,7 @@ import { strict } from "assert";
 import  injectHTML  from "vite-plugin-html-inject";
 
 export default {
-  base: "/Nuts/",
+  base: "/Nuts",
   server: {
     port: "3333",
     // strictPort: true,
@@ -42,7 +42,6 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        gallary: resolve(__dirname, "/src/assets/html/gallary/gallary.html"),
       },
     },
   },
