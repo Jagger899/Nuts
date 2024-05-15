@@ -201,9 +201,12 @@
     font-size: 13px;
     display: flex;
     align-items: center;
+    font-family: "Montserrat";
+    font-weight: 600;
 
     &_colory {
       color: $greenColor;
+      font-family: "Montserrat";
     }
   }
 

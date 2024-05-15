@@ -1,5 +1,9 @@
 .advantages {
-  padding: 175px 0 91px;
+  padding: 150px 0 72px;
+
+  &__container {
+    max-width: 1160px;
+  }
 
   @include media-breakpoint-down(md) {
     display: none;
@@ -14,15 +18,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    // &:first-child {
+    //   margin-right: 143px;
+    // }
+
+    // &:nth-child(2) {
+    //   margin-right: 72px;
+    // }
+
+    // &:nth-child(4) {
+    //   position: relative;
+    //   right: -94px;
+    // }
   }
 
   &__list-number {
     display: flex;
     align-items: flex-start;
     font-weight: 800;
+    gap: 4px;
     font-size: 72px;
     letter-spacing: 0.01em;
     font-family: "Montserrat";
+    position: relative;
+
+    &::after {
+      content: "Га";
+      font-weight: 900;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      position: absolute;
+      right: -27px;
+      top: 23px;
+    }
+
+    &_last {
+      &::after {
+        content: "%";
+      }
+    }
   }
 
   &__list-number-descr {
@@ -38,6 +73,7 @@
     text-align: center;
     font-family: "Raleway";
     max-width: 317px;
+    margin-top: -5px;
 
     &_first {
       max-width: 86px;

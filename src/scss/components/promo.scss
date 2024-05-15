@@ -113,7 +113,7 @@
     }
   }
 
-  &__video-svg {
+  &__svg {
     width: 61px;
     height: 61px;
 
@@ -132,5 +132,36 @@
     top: 0;
     left: 0;
     z-index: -1;
+  }
+
+  &_big {
+    height: 742px;
+
+    @include media-breakpoint-down(md) {
+      height: 450px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 350px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      height: 250px;
+    }
+
+    .promo__container {
+      padding-top: 238px;
+      @include media-breakpoint-down(md) {
+        padding-top: 80px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 40px;
+      }
+    }
+
+    .promo__video-link {
+      margin-top: 28px;
+    }
   }
 }

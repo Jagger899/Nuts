@@ -19,6 +19,7 @@
 выращивание фундука и грецкого ореха"
           imgSrc="src/assets/images/main/wood.png"
           class="promo"
+          svgHref="#video-link"
         />
 
         <section class="section production">
@@ -34,7 +35,7 @@
             <div class="cards">
               <load
                 src="src/html/components/production/card.html"
-                class="card card_with-tooltip"
+                class="card card_with-tooltip card_action"
                 imgSrc="src/assets/images/reused/nut-cofee.png"
                 srcTooltip="src/assets/images/reused/action-tooltip.svg"
                 imgClass="card__img"
@@ -157,9 +158,49 @@
         <load
           src="src/html/components/promo/promo.html"
           imgSrc="src/assets/images/reused/nuts-in-box.png"
-          class="promo promo_second"
+          class="promo promo_second promo_big"
           title="Наша главная цель - получить максимальную прибыль с одного гектара"
+          svgHref="#video-link"
         />
+
+        <section class="section benefit">
+          <div class="benefit__container">
+            <h2 class="section__title benefit__title">О пользе продукта</h2>
+
+            <p class="section__descr benefit__descr">
+              Каждый вид ореха содержит свой неповторимый уникальный баланс
+              витаминов, и микроэлементов
+            </p>
+
+            <div class="benefit__inner">
+
+              <load
+                src="src/html/components/benefit-card.html"
+                svgHref="#nut"
+                cardTitle="Грецкий орех"
+                imgSrc="src/assets/images/main/slider-1.png"
+                svgClass="benefit__card-svg-nut"
+              />
+
+              <load
+                src="src/html/components/benefit-card.html"
+                svgHref="#hazelnut"
+                cardTitle="Фундук"
+                imgSrc="src/assets/images/main/slider-2.png"
+                svgClass="benefit__card-svg-hazelnut"
+              />
+
+              <load
+                src="src/html/components/benefit-card.html"
+                svgHref="#dog-rose"
+                cardTitle="Шиповник"
+                imgSrc="src/assets/images/main/slider-3.png"
+                svgClass="benefit__card-svg-dog-rose"
+              />
+
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 

@@ -1,0 +1,119 @@
+.benefit {
+  padding: 79px 0 100px;
+
+  &__descr {
+    max-width: 604px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 31px;
+    
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    width: 410px;
+    height: 525px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+    @include media-breakpoint-down(md) {
+      height: 450px;
+      width: 350px;
+    }
+  }
+
+  &__card-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+
+  &__card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background $animation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: rgba(51, 125, 90, 0.95);
+    }
+
+    &:hover .benefit__card-text-box {
+      opacity: 1;
+      visibility: visible;
+      position: static;
+    }
+  }
+
+  &__card-info {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card-svg-nut {
+    width: 66px;
+    height: 76px;
+  }
+
+  &__card-svg-hazelnut {
+    width: 51px;
+    height: 51px;
+  }
+
+  &__card-svg-dog-rose {
+    width: 59px;
+    height: 54px;
+  }
+
+  &__card-title {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    color: $whiteColor;
+    margin-bottom: 34px;
+  }
+
+  &__card-text-box {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    transition: opacity $animation, visibility $animation;
+  }
+
+  &__card-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 128%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: $whiteColor;
+    max-width: 330px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      max-width: 280px;
+    }
+  }
+}

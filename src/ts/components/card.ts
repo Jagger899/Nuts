@@ -1,4 +1,10 @@
+
+
 export const mouseOverImg = function () {
+
+  
+
+
   const cards = document.querySelectorAll(".card");
   // const searchSvgs = document.querySelectorAll(".card__search-svg");
 
@@ -19,4 +25,6 @@ export const mouseOverImg = function () {
       card.classList.add("card_active");
     })
   })
+
+  
 };
