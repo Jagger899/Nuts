@@ -1,0 +1,203 @@
+.news {
+  padding: 75px 0 74px;
+
+  @include media-breakpoint-down(xs) {
+    padding: 40px 0;
+  }
+
+  &__container {
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__descr {
+    margin-left: 0;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    letter-spacing: 0.01em;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 81px;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__button-prev,
+  &__button-next {
+    position: absolute;
+    z-index: 4;
+    top: 38px;
+    right: 0;
+    width: 70px;
+    height: 58px;
+    background: $greenColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @include media-breakpoint-down(xs) {
+      width: 40px;
+      height: 28px;
+      top: 0px;
+    }
+
+    @include media-breakpoint-down(xxs) {
+      top: 83px;
+    }
+  }
+
+  &__button-prev {
+    right: 85px;
+
+    @include media-breakpoint-down(xs) {
+      right: 57px;
+    }
+  }
+
+  &__button-next {
+    right: 17px;
+  }
+
+  &__card {
+    width: 408px;
+
+    @include media-breakpoint-down(xs) {
+      width: 350px;
+    }
+  }
+
+  &__card-img-box {
+    position: relative;
+
+    &:hover {
+      .news__video-link {
+        opacity:1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 22px;
+  }
+
+  &__video-link {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity $animation, visibility $animation;
+  }
+
+
+  &__video-svg {
+    width: 61px;
+    height: 61px;
+  }
+
+  &__card-inner {
+    padding: 0 24px 19px;
+
+    @include media-breakpoint-down(xs) {
+      padding: 0;
+    }
+  }
+
+  &__card-date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: $greyColor;
+    font-family: "Montserrat";
+    margin-bottom: 13px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 10px;
+    }
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+
+    &_last {
+      max-width: 240px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+    }
+  }
+
+  &__card-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 12px;
+    }
+  }
+
+  &__card-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color $animation;
+
+    &:hover {
+      color: $greenColor;
+    }
+  }
+
+  &__card-svg {
+    width: 18px;
+    height: 18px;
+    transition: fill $animation;
+
+    &:hover {
+      fill: $greenColor;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    width: 222px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+  }
+}

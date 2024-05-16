@@ -173,7 +173,6 @@
             </p>
 
             <div class="benefit__inner">
-
               <load
                 src="src/html/components/benefit-card.html"
                 svgHref="#nut"
@@ -197,13 +196,94 @@
                 imgSrc="src/assets/images/main/slider-3.png"
                 svgClass="benefit__card-svg-dog-rose"
               />
-
             </div>
           </div>
         </section>
+
+        <load
+          src="src/html/components/promo/promo.html"
+          title="Эко продукция"
+          text="Выращиваем каждое деревцо с любовью, на экологически 
+чистой земле, без использования пестицидов и химии"
+          imgSrc="src/assets/images/reused/nuts-in-hand.png"
+          class="promo promo_big promo_sec-var"
+          svgHref="#eco"
+        />
+
+        <section class="section news">
+          <div class="news__container">
+            <h2 class="section__title news__title">Новости</h2>
+
+            <p class="section__descr news__descr">
+              Свежие новости и полезная информация
+            </p>
+
+            <div class="swiper news__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <load
+                    src="src/html/components/news/news-card.html"
+                    imgSrc="src/assets/images/reused/news-1.png"
+                    titleClass="news__card-title"
+                    newsTitle="Центр поддержки экспорта, в студии
+Павел Тулба"
+                    newsText="Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную..."
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <load
+                    src="src/html/components/news/news-card.html"
+                    imgSrc="src/assets/images/reused/news-2.png"
+                    titleClass="news__card-title"
+                    newsTitle="В Одесской области состоялся масштабный
+торгово - экспортный форум"
+                    newsText="Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную..."
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <load
+                    src="src/html/components/news/news-card.html"
+                    imgSrc="src/assets/images/reused/news-3.png"
+                    titleClass="news__card-title news__card-title_last"
+                    newsTitle="Сертификация органического
+производителя"
+                    newsText="Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную..."
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <load
+                    src="src/html/components/news/news-card.html"
+                    imgSrc="src/assets/images/reused/news-1.png"
+                    newsTitle="Центр поддержки экспорта, в студии
+Павел Тулба"
+                    newsText="Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="news__button-prev">
+              <svg class="card__slider-svg info__button-svg">
+                <use href="#button-prev"></use>
+              </svg>
+            </div>
+
+            <div class="news__button-next">
+              <svg class="card__slider-svg info__button-svg">
+                <use href="#button-next"></use>
+              </svg>
+            </div>
+
+            <a href="#" class="button button-white news__button"
+              >Смотреть все новости</a
+            >
+          </div>
+        </section>
+
+        <load src="src/html/components/contacts.html"/>
       </main>
     </div>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script src="src/ts/main.ts" type="module"></script>
   </body>
 </html>

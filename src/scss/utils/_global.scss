@@ -100,7 +100,8 @@ a,
 li,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Raleway";
   color: $blackColor;
 }
@@ -205,6 +206,7 @@ input {
   color: $greenColor;
   background: $whiteColor;
   border: 0.5px solid $greenColor;
+  transition: color $animation, background $animation;
 
   &:hover {
     background: $greenColor;

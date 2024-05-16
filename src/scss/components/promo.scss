@@ -82,6 +82,27 @@
     display: none;
   }
 
+  &__svg {
+    width: 61px;
+    height: 61px;
+
+    @include media-breakpoint-down(md) {
+      width: 51px;
+      height: 51px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // aspect-ratio: 3.2 / 1;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   &_second {
     @include media-breakpoint-down(md) {
       margin-top: 70px;
@@ -113,27 +134,6 @@
     }
   }
 
-  &__svg {
-    width: 61px;
-    height: 61px;
-
-    @include media-breakpoint-down(md) {
-      width: 51px;
-      height: 51px;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    // aspect-ratio: 3.2 / 1;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-
   &_big {
     height: 742px;
 
@@ -160,8 +160,91 @@
       }
     }
 
+    .promo__title {
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+      }
+    }
+
     .promo__video-link {
       margin-top: 28px;
+
+      @include media-breakpoint-down(xs) {
+        margin-top: 0;
+      }
+    }
+    .promo__descr-text {
+      @include media-breakpoint-down(xs) {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &_sec-var {
+    .promo__video-link {
+      order: -1;
+      margin-top: -15px;
+      margin-bottom: 43px;
+    }
+
+    .promo__title {
+      font-size: 45px;
+      margin-bottom: 12px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 42px;
+        margin-bottom: 30px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .promo__text {
+      max-width: 640px;
+      font-size: 22px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 14px;
+        margin-bottom: 10px;
+        max-width: 300px;
+      }
+    }
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  .video-close {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    fill: red;
+    z-index: -2;
+
+    &_active {
+      z-index: 1;
     }
   }
 }

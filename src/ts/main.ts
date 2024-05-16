@@ -4,6 +4,8 @@ import { mobileMenuOpen } from "./components/mobileMenu";
 import { mouseOverImg } from "./components/card";
 import { mainSwiperWork } from "./components/swiper";
 import { infoSwiperWork } from "./components/info-swiper";
+import { newsSwiperWork } from "./components/news-swiper";
+import { promoVideoPlay } from "./components/promoVideo";
 // import { benefitCardOverlay } from "./components/benefitCardOverlay";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -13,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   mainSwiperWork();
   mouseOverImg();
   infoSwiperWork();
+  newsSwiperWork();
+  promoVideoPlay();
   // benefitCardOverlay();
 });
 

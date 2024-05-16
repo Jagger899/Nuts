@@ -1,0 +1,106 @@
+.contacts {
+  padding: 101px 0 80px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 63px;
+    margin-top: 21px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+
+    margin-bottom: 46px;
+  }
+
+  &__tels {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__tel-svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    font-family: "Montserrat";
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__socials-svg {
+    width: 31px;
+    height: 31px;
+  }
+
+  &__mail-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: "Montserrat";
+    margin-bottom: 46px;
+  }
+
+  &__mail-link-svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__adress {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    margin-bottom: 32px;
+  }
+
+  &__adress-svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__adress-title {
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+
+  &__adress-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    font-family: "Montserrat";
+  }
+
+  // .map {
+  //   height: 518px;
+  // }
+}

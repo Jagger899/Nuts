@@ -1,8 +1,13 @@
 .benefit {
-  padding: 79px 0 100px;
+  padding: 79px 0 97px;
+
+  &__title {
+    margin-bottom: 24px;
+  }
 
   &__descr {
     max-width: 604px;
+    // margin-bottom: 24px;
   }
 
   &__inner {

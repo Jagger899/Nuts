@@ -108,6 +108,11 @@
     &:hover {
       fill: $whiteColor;
     }
+
+    @include media-breakpoint-down(xs) {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   &__inner {
@@ -130,6 +135,7 @@
       margin-top: 0;
       text-align: center;
     }
+
   }
 
   &__descr-text {

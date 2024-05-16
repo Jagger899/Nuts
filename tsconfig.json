@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "rootDir": "./"
-  }
+    "rootDir": "./",
+    "types": ["googlemaps"]
+  },
+  
 }
