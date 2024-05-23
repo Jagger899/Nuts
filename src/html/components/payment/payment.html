@@ -1,29 +1,191 @@
 <section class="payment">
   <div class="payment__container">
     <div class="tabs">
-      <div class="tabs__tab">
+      <div class="tabs__tab" data-tab="#tab1">
         <svg class="tabs__svg-pay">
-          <use href="pay"></use>
+          <use href="#pay"></use>
         </svg>
 
         <p class="tabs__text">Оплата заказа</p>
       </div>
 
-      <div class="tabs__tab">
-        <svg class="tabs__svg-pay">
-          <use href="pay"></use>
+      <div class="tabs__tab" data-tab="#tab2">
+        <svg class="tabs__svg-car">
+          <use href="#car"></use>
         </svg>
 
-        <p class="tabs__text">Оплата заказа</p>
+        <p class="tabs__text">партии</p>
       </div>
 
-      <div class="tabs__tab">
-        <svg class="tabs__svg-pay">
-          <use href="pay"></use>
+      <div class="tabs__tab" data-tab="#tab3">
+        <svg class="tabs__svg-return">
+          <use href="#return"></use>
         </svg>
 
-        <p class="tabs__text">Оплата заказа</p>
+        <p class="tabs__text">Возврат товара</p>
       </div>
+    </div>
+
+    <div class="payment__content payment__content_active" id="tab1">
+
+      <div class="payment__content-info">
+        <h3 class="payment__content-title">Способы оплаты</h3>
+
+        <div class="payment__content-info-box">
+          
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#uncash-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">Безналичный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
+            карту, или в терминалах.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#card-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">
+              Оплата с помощью банковской карты
+            </p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#cash-pay"></use>
+            </svg>
+
+            <p class="payment__content-descr-text">Наличный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплата заказов наложенным платежом в отделении Новой Почты, или
+            наличными курьерами
+          </p>
+        </div>
+      </div>
+
+      <img src="../../assets/images/payment/men-with-note.png" alt="" class="payment__content-img">
+    </div>
+
+    <div class="payment__content" id="tab2">
+
+      <div class="payment__content-info">
+        <h3 class="payment__content-title">Способы оплаты</h3>
+
+        <div class="payment__content-info-box">
+          
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#uncash-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">Безналичный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
+            карту, или в терминалах.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#card-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">
+              Оплата с помощью банковской карты
+            </p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#cash-pay"></use>
+            </svg>
+
+            <p class="payment__content-descr-text">Наличный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплата заказов наложенным платежом в отделении Новой Почты, или
+            наличными курьерами
+          </p>
+        </div>
+      </div>
+
+      <img src="../../assets/images/reused/two-men.png" alt="" class="payment__content-img">
+    </div>
+
+    <div class="payment__content" id="tab3">
+
+      <div class="payment__content-info">
+        <h3 class="payment__content-title">Способы оплаты</h3>
+
+        <div class="payment__content-info-box">
+          
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#uncash-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">Безналичный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
+            карту, или в терминалах.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#card-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">
+              Оплата с помощью банковской карты
+            </p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#cash-pay"></use>
+            </svg>
+
+            <p class="payment__content-descr-text">Наличный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплата заказов наложенным платежом в отделении Новой Почты, или
+            наличными курьерами
+          </p>
+        </div>
+      </div>
+
+      <img src="../../assets/images/payment/men-with-note.png" alt="" class="payment__content-img">
     </div>
   </div>
 </section>
