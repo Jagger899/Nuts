@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../scss/gallary.scss" />
+    <title>Payment and Delivery</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <load src="src/html/components/header.html" class="header" />
+      <load src="src/html/components/sprite.html" />
+
+      <main class="main">
+
+        <load
+          src="src/html/components/promo/promo.html"
+          title="Оплата и доставка"
+          text="Кадры социальной активности компании"
+          imgSrc="../../assets/images/payment/nuts-in-basket.png"
+          class="promo promo_small promo_with-pos-links"
+          svgHref="#video-link"
+          currentPosition="Оплата и доставка"
+        />
+
+        <section class="delivery">
+          <div class="delivery__container">
+            
+          </div>
+        </section>
+
+        <load src="src/html/components/contacts.html" />
+      </main>
+
+      <load src="src/html/components/footer.html" />
+    </div>
+
+    <script src="../../ts/payment.ts" type="module"></script>
+  </body>
+</html>
