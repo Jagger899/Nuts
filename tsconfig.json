@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "rootDir": "./",
-    "types": ["googlemaps"]
+    "types": ["googlemaps"],
+    "skipLibCheck": true
   },
   
 }

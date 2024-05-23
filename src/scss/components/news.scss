@@ -36,7 +36,7 @@
   &__slider {
     margin-bottom: 81px;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
       margin-bottom: 30px;
     }
   }

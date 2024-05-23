@@ -1,22 +1,22 @@
 <nav class="{=$class}">
   <ul class="nav__list">
     <li class="nav__item">
-      <a href="#" class="nav__link ">Магазин</a>
+      <a href="#" class="nav__link" data-link="{=$dataLink}">Магазин</a>
     </li>
     <li class="nav__item">
-      <a href="#" class="nav__link">О производстве</a>
+      <a href="#" class="nav__link" data-link="{=$dataLink}">{=$secondText}</a>
     </li>
     <li class="nav__item">
-      <a href="" class="nav__link">Оплата и доставка</a>
+      <a href="" class="nav__link" data-link="{=$dataLink}">Оплата и доставка</a>
     </li>
     <li class="nav__item">
-      <a href="" class="nav__link">Оптовым и корпоративным клиентам</a>
+      <a href="" class="nav__link" data-link="{=$dataLink}">{=$fourthText}</a>
     </li>
     <li class="nav__item">
-      <a href="" class="nav__link">Новости и статьи</a>
+      <a href="" class="nav__link" data-link="{=$dataLink}">Новости и статьи</a>
     </li>
     <li class="nav__item">
-      <a href="" class="nav__link">Контакты</a>
+      <a href="{=$lastHref}" onclick="location.href='{=$srcClick}'" data-link="{=$dataLink}" class="nav__link">{=$lastText} </a>
     </li>
   </ul>
 </nav>

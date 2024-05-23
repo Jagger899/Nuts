@@ -18,26 +18,26 @@
     }
   }
 
-  &__socials {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+  // &__socials {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 20px;
+  // }
 
-  &__top-svg {
-    width: 13px;
-    height: 13px;
-    cursor: pointer;
+  // &__top-svg {
+  //   width: 13px;
+  //   height: 13px;
+  //   cursor: pointer;
 
-    &:hover {
-      fill: red;
-    }
+  //   &:hover {
+  //     fill: red;
+  //   }
 
-    &:last-child {
-      width: 16px;
-      height: 16px;
-    }
-  }
+  //   &:last-child {
+  //     width: 16px;
+  //     height: 16px;
+  //   }
+  // }
 
   &__top-discount {
     font-weight: 600;

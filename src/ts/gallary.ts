@@ -1,3 +1,5 @@
+// console.log(window.location.href.split("/")[window.location.href.split("/").length - 1]);
+
 import { selectLanguageWorking } from "./components/selectLanguage";
 import { selectNavLinks } from "./components/selectNavLinks";
 import { mobileMenuOpen } from "./components/mobileMenu";
@@ -21,24 +23,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // googleMaps();
   // benefitCardOverlay();
 });
-
-// window.addEventListener("click", function (e) {
-//   const targetElement = e.target as HTMLElement;
-
-//   if (targetElement.tagName === "a") {
-//     e.preventDefault();
-//     const url = targetElement.getAttribute("href") as unknown as HTMLElement;
-//     window.history.pushState(null, null, url);
-
-//     const xhr = new XMLHttpRequest();
-//     xhr.open("GET", url);
-//     xhr.onload = function () {
-//       if (xhr.status === 200) {
-//         document.querySelector(".content").innerHTML = xhr.responseText;
-//       } else {
-//         console.error("Request failed.  Returned status of " + xhr.status);
-//       }
-//     };
-//     xhr.send();
-//   }
-// });

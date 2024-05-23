@@ -1,0 +1,165 @@
+.gallary {
+  padding: 93px 0 90px;
+
+  &__card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+      grid-column: 1 / 4;
+    }
+
+    &:hover {
+      .card__overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__card-promo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // max-height: 556px;
+
+    &_big {
+      grid-column: 1 /4;
+    }
+  }
+
+  &__cards-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 27px;
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+
+  .card-big {
+    grid-column: 1 /3;
+
+    .card__overlay-text {
+      max-width: 500px;
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-column: 1 / 4;
+    }
+  }
+
+  .card-big-second {
+    grid-column: 2/4;
+
+    @include media-breakpoint-down(md) {
+      grid-column: 1 / 4;
+    }
+  }
+
+  .card__img {
+    width: 100%;
+    max-height: 556px;
+    height: 100%;
+    object-fit: cover;
+
+    @include media-breakpoint-down(md) {
+      height: 400px;
+      aspect-ratio: 1 / 2;
+    }
+  }
+
+  .card__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 125, 90, 0.97);
+    transition: opacity $animation, visibility $animation;
+    top: 0;
+    left: 0;
+    padding: 77px 41px 0 39px;
+    visibility: hidden;
+    opacity: 0;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .card__overlay-svg {
+    width: 322px;
+    height: 293px;
+    position: absolute;
+    bottom: -56px;
+    right: -118px;
+  }
+
+  .card__overlay-title {
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: $whiteColor;
+    margin-bottom: 40px;
+    font-family: "Montserrat";
+  }
+
+  .card__overlay-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 147%;
+    font-family: "Montserrat";
+    color: $whiteColor;
+    max-width: 398px;
+
+    &_strong {
+      font-weight: 700;
+    }
+  }
+
+  .video-svg {
+    width: 61px;
+    height: 61px;
+  }
+
+  &__card-content {
+    position: absolute;
+    // top: 237px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__promo-text {
+    max-width: 563px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: "Montserrat";
+    color: $whiteColor;
+    text-align: center;
+  }
+
+  &__promo-title {
+    color: $whiteColor;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+  }
+
+  &__card-promo-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}

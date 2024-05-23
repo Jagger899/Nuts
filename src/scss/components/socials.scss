@@ -1,0 +1,20 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__svg {
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+
+    &:hover {
+      fill: red;
+    }
+
+    &:last-child {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

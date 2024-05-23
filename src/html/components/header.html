@@ -1,7 +1,7 @@
 <header class="{=$class}">
   <div class="header__container">
     <div class="header__top">
-      <div class="header__socials">
+      <!-- <div class="header__socials">
         <svg class="header__top-svg">
           <use href="#facebook"></use>
         </svg>
@@ -13,7 +13,9 @@
         <svg class="header__top-svg">
           <use href="#youtube"></use>
         </svg>
-      </div>
+      </div> -->
+
+      <load src="src/html/components/socials.html"/>
 
       <div class="header__top-user-info">
         <p class="header__top-discount">Ваша персональная скидка - 5%</p>
@@ -55,17 +57,19 @@
     </div>
 
     <div class="header__bottom">
-      <div class="header__bottom-logo-box">
+      <!-- <div class="logo-box">
         <img
           src="src/assets/images/reused/logo.svg"
           alt=""
-          class="header__bottom-logo"
+          class="logo-box__img"
         />
-        <h1 class="header__bottom-title">
+        <h1 class="logo-box__title">
           <span>ОРЕХ </span>
           <span>ПРИЧЕРНОМОРЬЯ</span>
         </h1>
-      </div>
+      </div> -->
+
+      <load src="src/html/components/logo-box.html" logoSrc="src/assets/images/reused/logo.svg" />
 
       <div class="header__bottom-inner">
         <div class="header__bottom-contacts">
@@ -112,7 +116,8 @@
       </div>
     </div>
 
-    <load src="./navigation.html" class="nav header__nav"/>
+    <load src="./navigation.html" class="nav header__nav" secondText="О производстве
+" fourthText="Оптовым и корпоративным клиентам" lastText="Контакты"/>
 
     <load src="./header-mobile.html"/>
   </div>
