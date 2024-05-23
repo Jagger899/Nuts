@@ -1,0 +1,1 @@
+import{s as e,a as o,m as a,p as n}from"./promoVideo-DF-l_Bo4.js";import{m as s,a as i,i as r,n as m}from"./news-swiper-BENqXapG.js";document.addEventListener("DOMContentLoaded",function(){e(),o(),a(),s(),i(),r(),m(),n()});

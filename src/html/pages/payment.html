@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
-    <script type="module" crossorigin src="/Nuts/assets/main-DxfIwwuw.js"></script>
+    <title>Payment and Delivery</title>
+    <script type="module" crossorigin src="/Nuts/assets/payment-vmf9SJuY.js"></script>
     <link rel="modulepreload" crossorigin href="/Nuts/assets/promoVideo-DF-l_Bo4.js">
-    <link rel="modulepreload" crossorigin href="/Nuts/assets/news-swiper-BENqXapG.js">
-    <link rel="stylesheet" crossorigin href="/Nuts/assets/news-swiper-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/Nuts/assets/main-qkEgZkeN.css">
+    <link rel="stylesheet" crossorigin href="/Nuts/assets/payment-8n05Coev.css">
   </head>
   <body>
     <div class="wrapper">
@@ -242,7 +240,7 @@
 
     <div class="header__bottom-logo-box header__bottom-logo-box_mobile">
       <img
-        src="/Nuts/assets/logo-asNFFTCZ.svg"
+        src="src/assets/images/reused/logo.svg"
         alt=""
         class="header__bottom-logo"
       />
@@ -261,7 +259,7 @@
     <div class="mobile-menu__top">
       <div class="header__bottom-logo-box">
         <img
-          src="/Nuts/assets/logo-asNFFTCZ.svg"
+          src="src/assets/images/reused/logo.svg"
           alt=""
           class="header__bottom-logo"
         />
@@ -1173,7 +1171,8 @@
 
 
       <main class="main">
-        <section class="promo">
+
+        <section class="promo promo_small promo_with-pos-links">
   <div class="promo__container">
 
     <div class="promo__pos-links">
@@ -1181,14 +1180,13 @@
       <svg class="promo__pos-svg">
         <use href="#arrow-left"></use>
       </svg>
-      <p class="promo__pos-text">{=$currentPosition}</p>
+      <p class="promo__pos-text">Оплата и доставка</p>
     </div>
 
     <div class="promo__content">
-      <h1 class="promo__title">Орех Причерноморья</h1>
+      <h1 class="promo__title">Оплата и доставка</h1>
 
-      <p class="promo__text">Единственный в Украине сад совместного 
-выращивание фундука и грецкого ореха</p>
+      <p class="promo__text">Кадры социальной активности компании</p>
 
       <a href="#" class="promo__video-link">
         <svg class="promo__svg">
@@ -1199,7 +1197,7 @@
       <p class="promo__descr-text">Cмотреть видео о производстве</p>
     </div>
   </div>
-  <img class="promo__img" alt="photo" src="/Nuts/assets/wood-Bq2x3KAo.png" />
+  <img class="promo__img" alt="photo" src="/Nuts/assets/nuts-in-basket-LD3uil6g.png" />
 
   <div class="video">
     <iframe
@@ -1222,978 +1220,198 @@
 <!-- src="src/assets/images/main/wood.png"  -->
 
 
-        <section class="section production">
-          <div class="production__container">
-            <h2 class="section__title">Продукция</h2>
-
-            <p class="section__descr">
-              Экологически чистые, качественные ядра грецкого ореха и фундука, а
-              также плоды шиповника в удобной, надежной, вакуумной упаковке
-              разного объема
-            </p>
-
-            <div class="cards">
-              <div class="card card_with-tooltip card_action">
-  <img src="data:image/svg+xml,%3csvg%20width='125'%20height='39'%20viewBox='0%200%20125%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.13445%200.559814C4.13445%200.559814%200%201.40249%200%205.65591C0%209.90895%200%2031.6729%200%2031.6729C0%2031.6729%200.459071%2026.4316%204.13445%2026.4316H82L74.0596%2013.0347L82%200.559814H4.13445Z'%20fill='%23DD133B'/%3e%3cpath%20d='M22.61%2010.5714H24.09L26.68%2017.6714H25L24.45%2016.0814H22.24L21.7%2017.6714H20.02L22.61%2010.5714ZM24.18%2014.9514L23.35%2012.4414L22.5%2014.9514H24.18ZM29.6492%2013.3914H30.0192L32.0892%2010.5714H33.9392L31.3892%2014.0014L34.1692%2017.6714H32.3392L30.1692%2014.8814H29.6492V17.6714H28.0092V10.5714H29.6492V13.3914ZM40.4584%2017.6714H35.3184V10.5714H36.9584V16.2314H39.3684V10.5714H41.0084V16.2314H42.0384V19.3914H40.4584V17.6714ZM45.1854%2015.1214L48.5254%2010.5714H49.7454V17.6714H48.1054V13.2314L44.8054%2017.6714H43.5354V10.5714H45.1854V15.1214ZM55.4323%2017.6714V15.1114H54.5823L53.0023%2017.6714H51.2223L52.9423%2014.9214C52.5423%2014.7481%2052.2257%2014.4814%2051.9923%2014.1214C51.7657%2013.7547%2051.6523%2013.3281%2051.6523%2012.8414C51.6523%2012.5214%2051.709%2012.2247%2051.8223%2011.9514C51.9423%2011.6781%2052.1023%2011.4381%2052.3023%2011.2314C52.509%2011.0247%2052.7523%2010.8647%2053.0323%2010.7514C53.319%2010.6314%2053.6323%2010.5714%2053.9723%2010.5714H57.0723V17.6714H55.4323ZM55.4323%2011.9714H54.1823C54.0757%2011.9714%2053.969%2011.9914%2053.8623%2012.0314C53.7623%2012.0647%2053.669%2012.1181%2053.5823%2012.1914C53.5023%2012.2581%2053.4357%2012.3481%2053.3823%2012.4614C53.3357%2012.5681%2053.3123%2012.6947%2053.3123%2012.8414C53.3123%2013.1347%2053.3957%2013.3547%2053.5623%2013.5014C53.729%2013.6414%2053.929%2013.7114%2054.1623%2013.7114H55.4323V11.9714Z'%20fill='white'/%3e%3c/svg%3e" alt="tooltip" class="card__tooltip">
-
-  <svg class="card__search-svg">
-    <use href="#search-product"></use>
-  </svg>
-
-  <div class="swiper card__slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-    </div>
-
-    <div class="button-prev">
-      <svg class="card__slider-svg">
-        <use href="#button-prev"></use>
-      </svg>
-    </div>
-    <div class="button-next">
-      <svg class="card__slider-svg">
-        <use href="#button-next"></use>
-      </svg>
-    </div>
-  </div>
-
-  <h3 class="card__title">Грецкий орех</h3>
-
-  <p class="card__article">Арт: 0091</p>
-
-  <p class="card__descr">Орех сладкий, классический, очищенный</p>
-
-  <div class="card__info">
-    <div class="card__info-box">
-      <svg class="card__weight-svg">
-        <use href="#weights"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Масса:</p>
-        <p class="card__info-value">40г.</p>
-      </div>
-    </div>
-
-    <div class="card__info-box">
-      <svg class="card__package-svg">
-        <use href="#bag"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Упаковка</p>
-        <p class="card__info-value">вакуумная</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card__payment">
-    <div class="card__price-box">
-      <p class="card__price">Цена:</p>
-      <p class="card__price-number">19 грн</p>
-      <p class="card__price-old-number">21 грн.</p>
-    </div>
-
-    <a href="#" class="button button-green card__button">Купить</a>
-  </div>
-</div>
-
-
-              <div class="card card_with-tooltip">
-  <img src="data:image/svg+xml,%3csvg%20width='117'%20height='39'%20viewBox='0%200%20117%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.13445%200.559814C4.13445%200.559814%200%201.40249%200%205.65591C0%209.90895%200%2031.6729%200%2031.6729C0%2031.6729%200.459071%2026.4316%204.13445%2026.4316H82L74.0596%2013.0347L82%200.559814H4.13445Z'%20fill='%23E1843E'/%3e%3cpath%20d='M18.82%2010.5714V17.6714H17.18V14.7614H14.35V17.6714H12.71V10.5714H14.35V13.3214H17.18V10.5714H18.82ZM23.9291%2017.7314C23.4024%2017.7314%2022.9224%2017.6281%2022.4891%2017.4214C22.0557%2017.2147%2021.6857%2016.9447%2021.3791%2016.6114C21.0724%2016.2714%2020.8324%2015.8847%2020.6591%2015.4514C20.4924%2015.0181%2020.4091%2014.5714%2020.4091%2014.1114C20.4091%2013.6447%2020.4957%2013.1947%2020.6691%2012.7614C20.8491%2012.3281%2021.0957%2011.9481%2021.4091%2011.6214C21.7291%2011.2881%2022.1057%2011.0247%2022.5391%2010.8314C22.9724%2010.6314%2023.4457%2010.5314%2023.9591%2010.5314C24.4857%2010.5314%2024.9657%2010.6347%2025.3991%2010.8414C25.8324%2011.0481%2026.2024%2011.3214%2026.5091%2011.6614C26.8157%2012.0014%2027.0524%2012.3881%2027.2191%2012.8214C27.3857%2013.2547%2027.4691%2013.6947%2027.4691%2014.1414C27.4691%2014.6081%2027.3791%2015.0581%2027.1991%2015.4914C27.0257%2015.9247%2026.7824%2016.3081%2026.4691%2016.6414C26.1557%2016.9681%2025.7824%2017.2314%2025.3491%2017.4314C24.9157%2017.6314%2024.4424%2017.7314%2023.9291%2017.7314ZM22.0791%2014.1314C22.0791%2014.4047%2022.1191%2014.6714%2022.1991%2014.9314C22.2791%2015.1847%2022.3957%2015.4114%2022.5491%2015.6114C22.7091%2015.8114%2022.9057%2015.9714%2023.1391%2016.0914C23.3724%2016.2114%2023.6391%2016.2714%2023.9391%2016.2714C24.2524%2016.2714%2024.5257%2016.2081%2024.7591%2016.0814C24.9924%2015.9547%2025.1857%2015.7914%2025.3391%2015.5914C25.4924%2015.3847%2025.6057%2015.1547%2025.6791%2014.9014C25.7591%2014.6414%2025.7991%2014.3781%2025.7991%2014.1114C25.7991%2013.8381%2025.7591%2013.5747%2025.6791%2013.3214C25.5991%2013.0614%2025.4791%2012.8347%2025.3191%2012.6414C25.1591%2012.4414%2024.9624%2012.2847%2024.7291%2012.1714C24.5024%2012.0514%2024.2391%2011.9914%2023.9391%2011.9914C23.6257%2011.9914%2023.3524%2012.0547%2023.1191%2012.1814C22.8924%2012.3014%2022.6991%2012.4614%2022.5391%2012.6614C22.3857%2012.8614%2022.2691%2013.0914%2022.1891%2013.3514C22.1157%2013.6047%2022.0791%2013.8647%2022.0791%2014.1314ZM34.8667%2015.8514C34.8667%2016.1581%2034.8034%2016.4247%2034.6767%2016.6514C34.5501%2016.8781%2034.3767%2017.0681%2034.1567%2017.2214C33.9367%2017.3681%2033.6801%2017.4814%2033.3867%2017.5614C33.0934%2017.6347%2032.7834%2017.6714%2032.4567%2017.6714H28.9967V10.5714H32.9467C33.1934%2010.5714%2033.4167%2010.6247%2033.6167%2010.7314C33.8167%2010.8381%2033.9867%2010.9781%2034.1267%2011.1514C34.2667%2011.3181%2034.3734%2011.5114%2034.4467%2011.7314C34.5267%2011.9447%2034.5667%2012.1647%2034.5667%2012.3914C34.5667%2012.7314%2034.4801%2013.0514%2034.3067%2013.3514C34.1401%2013.6514%2033.8867%2013.8781%2033.5467%2014.0314C33.9534%2014.1514%2034.2734%2014.3647%2034.5067%2014.6714C34.7467%2014.9781%2034.8667%2015.3714%2034.8667%2015.8514ZM33.1967%2015.5214C33.1967%2015.3014%2033.1334%2015.1147%2033.0067%2014.9614C32.8801%2014.8081%2032.7201%2014.7314%2032.5267%2014.7314H30.6367V16.2814H32.4567C32.6701%2016.2814%2032.8467%2016.2114%2032.9867%2016.0714C33.1267%2015.9314%2033.1967%2015.7481%2033.1967%2015.5214ZM30.6367%2011.9714V13.4414H32.2467C32.4267%2013.4414%2032.5867%2013.3814%2032.7267%2013.2614C32.8667%2013.1414%2032.9367%2012.9547%2032.9367%2012.7014C32.9367%2012.4681%2032.8734%2012.2881%2032.7467%2012.1614C32.6267%2012.0347%2032.4801%2011.9714%2032.3067%2011.9714H30.6367ZM38.1815%2015.1214L41.5215%2010.5714H42.7415V17.6714H41.1015V13.2314L37.8015%2017.6714H36.5315V10.5714H38.1815V15.1214ZM50.8684%2010.5714V17.6714H49.2284V14.7614H46.3984V17.6714H44.7584V10.5714H46.3984V13.3214H49.2284V10.5714H50.8684ZM54.5375%2013.3914H54.9075L56.9775%2010.5714H58.8275L56.2775%2014.0014L59.0575%2017.6714H57.2275L55.0575%2014.8814H54.5375V17.6714H52.8975V10.5714H54.5375V13.3914ZM62.0967%2010.5714H63.5767L66.1667%2017.6714H64.4867L63.9367%2016.0814H61.7267L61.1867%2017.6714H59.5067L62.0967%2010.5714ZM63.6667%2014.9514L62.8367%2012.4414L61.9867%2014.9514H63.6667Z'%20fill='white'/%3e%3c/svg%3e" alt="tooltip" class="card__tooltip">
-
-  <svg class="card__search-svg">
-    <use href="#search-product"></use>
-  </svg>
-
-  <div class="swiper card__slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-    </div>
-
-    <div class="button-prev">
-      <svg class="card__slider-svg">
-        <use href="#button-prev"></use>
-      </svg>
-    </div>
-    <div class="button-next">
-      <svg class="card__slider-svg">
-        <use href="#button-next"></use>
-      </svg>
-    </div>
-  </div>
-
-  <h3 class="card__title">Грецкий орех</h3>
-
-  <p class="card__article">Арт: 0091</p>
-
-  <p class="card__descr">Орех сладкий, классический, очищенный</p>
-
-  <div class="card__info">
-    <div class="card__info-box">
-      <svg class="card__weight-svg">
-        <use href="#weights"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Масса:</p>
-        <p class="card__info-value">40г.</p>
-      </div>
-    </div>
-
-    <div class="card__info-box">
-      <svg class="card__package-svg">
-        <use href="#bag"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Упаковка</p>
-        <p class="card__info-value">вакуумная</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card__payment">
-    <div class="card__price-box">
-      <p class="card__price">Цена:</p>
-      <p class="card__price-number">19 грн</p>
-      <p class="card__price-old-number">21 грн.</p>
-    </div>
-
-    <a href="#" class="button button-green card__button">Купить</a>
-  </div>
-</div>
-
-
-              <div class="card">
-  <img src="{=$srcTooltip}" alt="tooltip" class="card__tooltip">
-
-  <svg class="card__search-svg">
-    <use href="#search-product"></use>
-  </svg>
-
-  <div class="swiper card__slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-cofee-Deld2QL9.png" alt="photo" class="card__img" />
-      </div>
-    </div>
-
-    <div class="button-prev">
-      <svg class="card__slider-svg">
-        <use href="#button-prev"></use>
-      </svg>
-    </div>
-    <div class="button-next">
-      <svg class="card__slider-svg">
-        <use href="#button-next"></use>
-      </svg>
-    </div>
-  </div>
-
-  <h3 class="card__title">Грецкий орех</h3>
-
-  <p class="card__article">Арт: 0091</p>
-
-  <p class="card__descr">Орех сладкий, классический, очищенный</p>
-
-  <div class="card__info">
-    <div class="card__info-box">
-      <svg class="card__weight-svg">
-        <use href="#weights"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Масса:</p>
-        <p class="card__info-value">40г.</p>
-      </div>
-    </div>
-
-    <div class="card__info-box">
-      <svg class="card__package-svg">
-        <use href="#bag"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Упаковка</p>
-        <p class="card__info-value">вакуумная</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card__payment">
-    <div class="card__price-box">
-      <p class="card__price">Цена:</p>
-      <p class="card__price-number">19 грн</p>
-      <p class="card__price-old-number">21 грн.</p>
-    </div>
-
-    <a href="#" class="button button-green card__button">Купить</a>
-  </div>
-</div>
-
-
-              <div class="card">
-  <img src="{=$srcTooltip}" alt="tooltip" class="card__tooltip">
-
-  <svg class="card__search-svg">
-    <use href="#search-product"></use>
-  </svg>
-
-  <div class="swiper card__slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-    </div>
-
-    <div class="button-prev">
-      <svg class="card__slider-svg">
-        <use href="#button-prev"></use>
-      </svg>
-    </div>
-    <div class="button-next">
-      <svg class="card__slider-svg">
-        <use href="#button-next"></use>
-      </svg>
-    </div>
-  </div>
-
-  <h3 class="card__title">Грецкий орех</h3>
-
-  <p class="card__article">Арт: 0091</p>
-
-  <p class="card__descr">Орех сладкий, классический, очищенный</p>
-
-  <div class="card__info">
-    <div class="card__info-box">
-      <svg class="card__weight-svg">
-        <use href="#weights"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Масса:</p>
-        <p class="card__info-value">40г.</p>
-      </div>
-    </div>
-
-    <div class="card__info-box">
-      <svg class="card__package-svg">
-        <use href="#bag"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Упаковка</p>
-        <p class="card__info-value">вакуумная</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card__payment">
-    <div class="card__price-box">
-      <p class="card__price">Цена:</p>
-      <p class="card__price-number">19 грн</p>
-      <p class="card__price-old-number">21 грн.</p>
-    </div>
-
-    <a href="#" class="button button-green card__button">Купить</a>
-  </div>
-</div>
-
-
-              <div class="card">
-  <img src="{=$srcTooltip}" alt="tooltip" class="card__tooltip">
-
-  <svg class="card__search-svg">
-    <use href="#search-product"></use>
-  </svg>
-
-  <div class="swiper card__slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-    </div>
-
-    <div class="button-prev">
-      <svg class="card__slider-svg">
-        <use href="#button-prev"></use>
-      </svg>
-    </div>
-    <div class="button-next">
-      <svg class="card__slider-svg">
-        <use href="#button-next"></use>
-      </svg>
-    </div>
-  </div>
-
-  <h3 class="card__title">Грецкий орех</h3>
-
-  <p class="card__article">Арт: 0091</p>
-
-  <p class="card__descr">Орех сладкий, классический, очищенный</p>
-
-  <div class="card__info">
-    <div class="card__info-box">
-      <svg class="card__weight-svg">
-        <use href="#weights"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Масса:</p>
-        <p class="card__info-value">40г.</p>
-      </div>
-    </div>
-
-    <div class="card__info-box">
-      <svg class="card__package-svg">
-        <use href="#bag"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Упаковка</p>
-        <p class="card__info-value">вакуумная</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card__payment">
-    <div class="card__price-box">
-      <p class="card__price">Цена:</p>
-      <p class="card__price-number">19 грн</p>
-      <p class="card__price-old-number">21 грн.</p>
-    </div>
-
-    <a href="#" class="button button-green card__button">Купить</a>
-  </div>
-</div>
-
-
-              <div class="card">
-  <img src="{=$srcTooltip}" alt="tooltip" class="card__tooltip">
-
-  <svg class="card__search-svg">
-    <use href="#search-product"></use>
-  </svg>
-
-  <div class="swiper card__slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="/Nuts/assets/nut-box-Ck8AT1bo.png" alt="photo" class="card__img card__img_cof" />
-      </div>
-    </div>
-
-    <div class="button-prev">
-      <svg class="card__slider-svg">
-        <use href="#button-prev"></use>
-      </svg>
-    </div>
-    <div class="button-next">
-      <svg class="card__slider-svg">
-        <use href="#button-next"></use>
-      </svg>
-    </div>
-  </div>
-
-  <h3 class="card__title">Грецкий орех</h3>
-
-  <p class="card__article">Арт: 0091</p>
-
-  <p class="card__descr">Орех сладкий, классический, очищенный</p>
-
-  <div class="card__info">
-    <div class="card__info-box">
-      <svg class="card__weight-svg">
-        <use href="#weights"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Масса:</p>
-        <p class="card__info-value">40г.</p>
-      </div>
-    </div>
-
-    <div class="card__info-box">
-      <svg class="card__package-svg">
-        <use href="#bag"></use>
-      </svg>
-
-      <div class="card__info-block">
-        <p class="card__info-annot">Упаковка</p>
-        <p class="card__info-value">вакуумная</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card__payment">
-    <div class="card__price-box">
-      <p class="card__price">Цена:</p>
-      <p class="card__price-number">19 грн</p>
-      <p class="card__price-old-number">21 грн.</p>
-    </div>
-
-    <a href="#" class="button button-green card__button">Купить</a>
-  </div>
-</div>
-
-            </div>
-
-            <a href="#" class="button button-white production__button"
-              >Перейти в магазин</a
-            >
-          </div>
-        </section>
-
-        <section class="section info">
-          <div class="info__container">
-            <div class="info__inner">
-              <h2 class="section__title info__title">О производителе</h2>
-              <div class="info__descr-box">
-                <p class="info__descr-text"> <span class="info__descr-text_colory">Сельскохозяйственный обслуживающий кооператив 
-                  “Орех Причерноморья”</span> выращивает смешанные сады 
-                    ореха грецкого с фундуком, а также ореха грецкого 
-                    с шиповником, на площади более 150 гектаров.  </p>
-
-
-                <p class="info__descr-text">Помимо этого кооператив занимается выращиванием 
-                  посадочного материала, саженцов привитого и непривитого 
-                  грецкого ореха, фундука и шиповника.</p>
-
-                <a href="#" class="button button-white info__button"
-                  >Подробнее</a
-                >
-              </div>
-            </div>
-
-            <div class="swiper info__slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-  <img src="/Nuts/assets/tractor-slider-1-DpUn_ZbH.png" alt="photo" class="info__slider-img" />
-  <a href="#" class="info__slider-link">
-    <svg class="info__slider-svg">
-      <use href="#video-link"></use>
-    </svg>
-  </a>
-</div>
-
-
-                <div class="swiper-slide">
-  <img src="/Nuts/assets/tractor-slider-2-BWT-Q5kz.png" alt="photo" class="info__slider-img" />
-  <a href="#" class="info__slider-link">
-    <svg class="info__slider-svg">
-      <use href="#video-link"></use>
-    </svg>
-  </a>
-</div>
-
-
-                <div class="swiper-slide">
-  <img src="/Nuts/assets/tractor-field-BQbLV3GU.png" alt="photo" class="info__slider-img" />
-  <a href="#" class="info__slider-link">
-    <svg class="info__slider-svg">
-      <use href="#video-link"></use>
-    </svg>
-  </a>
-</div>
-
-              </div>
-
-              <div class="info__button-prev">
-                <svg class="card__slider-svg info__button-svg">
-                  <use href="#button-prev"></use>
-                </svg>
-              </div>
-
-              <div class="info__button-next">
-                <svg class="card__slider-svg info__button-svg">
-                  <use href="#button-next"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="advantages">
-  <div class="advantages__container">
-    <dl class="advantages__list">
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number">240</dd>
-        <dt class="advantages__list-text advantages__list-text_first">Cмешанных садов</dt>
-      </div>
-
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number">1</dd>
-        <dt class="advantages__list-text advantages__list-text_second">Тепличного комплекса</dt>
-      </div>
-
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number">10</dd>
-        <dt class="advantages__list-text">
-          Первая промышленная плантация шиповника в Украине
-        </dt>
-      </div>
-
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number advantages__list-number_last">80</dd>
-        <dt class="advantages__list-text advantages__list-text_fourth">Приживаемости саженцев</dt>
-      </div>
-    </dl>
-  </div>
-</section>
-
-
-        <section class="promo promo_second promo_big">
-  <div class="promo__container">
-
-    <div class="promo__pos-links">
-      <a href="#" class="promo__pos-link">Главная</a>
-      <svg class="promo__pos-svg">
-        <use href="#arrow-left"></use>
-      </svg>
-      <p class="promo__pos-text">{=$currentPosition}</p>
-    </div>
-
-    <div class="promo__content">
-      <h1 class="promo__title">Наша главная цель - получить максимальную прибыль с одного гектара</h1>
-
-      <p class="promo__text">{=$text}</p>
-
-      <a href="#" class="promo__video-link">
-        <svg class="promo__svg">
-          <use href="#video-link"></use>
+        <section class="payment">
+  <div class="payment__container">
+    <div class="tabs">
+      <div class="tabs__tab" data-tab="#tab1">
+        <svg class="tabs__svg-pay">
+          <use href="#pay"></use>
         </svg>
-      </a>
 
-      <p class="promo__descr-text">Cмотреть видео о производстве</p>
-    </div>
-  </div>
-  <img class="promo__img" alt="photo" src="/Nuts/assets/nuts-in-box-D-ey7HJT.png" />
-
-  <div class="video">
-    <iframe
-      width="100%"
-      height="100%"
-      src="https://www.youtube.com/embed/hT4O8VI__XE?si=H1z3tfFuYTZChBhE"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </div>
-
-  <svg class="video-close">
-    <use href="#menu-close"></use>
-  </svg>
-</section>
-
-<!-- src="src/assets/images/main/wood.png"  -->
-
-
-        <section class="section benefit">
-          <div class="benefit__container">
-            <h2 class="section__title benefit__title">О пользе продукта</h2>
-
-            <p class="section__descr benefit__descr">
-              Каждый вид ореха содержит свой неповторимый уникальный баланс
-              витаминов, и микроэлементов
-            </p>
-
-            <div class="benefit__inner">
-              <div class="benefit__card">
-  <!-- <div class="benefit__card-info">
-    <svg class="benefit__card-svg-nut">
-      <use href="#nut"></use>
-    </svg>
-    <h3 class="benefit__card-title">Грецкий орех</h3>
-    <div class="benefit__card-text-box">
-      <p class="benefit__card-text">
-        Дерево жизни - так часто величают грецкий орех, поскольку с давних пор
-        он кормил, восстанавливал силы и лечил человека.
-      </p>
-
-      <p class="benefit__card-text">
-        Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая
-        профилактика многих заболеваний
-      </p>
-    </div>
-  </div> -->
-
-  <img src="/Nuts/assets/slider-1-Ds-laauf.png" alt="photo" class="benefit__card-img" />
-
-  <div class="benefit__card-overlay">
-    <div class="benefit__card-info">
-      <svg class="benefit__card-svg-nut">
-        <use href="#nut"></use>
-      </svg>
-      <h3 class="benefit__card-title">Грецкий орех</h3>
-      
-      <div class="benefit__card-text-box">
-        <p class="benefit__card-text">
-          Дерево жизни - так часто величают грецкий орех, поскольку с давних пор
-          он кормил, восстанавливал силы и лечил человека.
-        </p>
-
-        <p class="benefit__card-text">
-          Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая
-          профилактика многих заболеваний
-        </p>
+        <p class="tabs__text">Оплата заказа</p>
       </div>
-    </div>
-  </div>
 
-  <!-- <div class="benefits__card-overlay">
-   
-  </div> -->
-</div>
-
-
-              <div class="benefit__card">
-  <!-- <div class="benefit__card-info">
-    <svg class="benefit__card-svg-hazelnut">
-      <use href="#hazelnut"></use>
-    </svg>
-    <h3 class="benefit__card-title">Фундук</h3>
-    <div class="benefit__card-text-box">
-      <p class="benefit__card-text">
-        Дерево жизни - так часто величают грецкий орех, поскольку с давних пор
-        он кормил, восстанавливал силы и лечил человека.
-      </p>
-
-      <p class="benefit__card-text">
-        Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая
-        профилактика многих заболеваний
-      </p>
-    </div>
-  </div> -->
-
-  <img src="/Nuts/assets/slider-2-23QN3TEP.png" alt="photo" class="benefit__card-img" />
-
-  <div class="benefit__card-overlay">
-    <div class="benefit__card-info">
-      <svg class="benefit__card-svg-hazelnut">
-        <use href="#hazelnut"></use>
-      </svg>
-      <h3 class="benefit__card-title">Фундук</h3>
-      
-      <div class="benefit__card-text-box">
-        <p class="benefit__card-text">
-          Дерево жизни - так часто величают грецкий орех, поскольку с давних пор
-          он кормил, восстанавливал силы и лечил человека.
-        </p>
-
-        <p class="benefit__card-text">
-          Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая
-          профилактика многих заболеваний
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="benefits__card-overlay">
-   
-  </div> -->
-</div>
-
-
-              <div class="benefit__card">
-  <!-- <div class="benefit__card-info">
-    <svg class="benefit__card-svg-dog-rose">
-      <use href="#dog-rose"></use>
-    </svg>
-    <h3 class="benefit__card-title">Шиповник</h3>
-    <div class="benefit__card-text-box">
-      <p class="benefit__card-text">
-        Дерево жизни - так часто величают грецкий орех, поскольку с давних пор
-        он кормил, восстанавливал силы и лечил человека.
-      </p>
-
-      <p class="benefit__card-text">
-        Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая
-        профилактика многих заболеваний
-      </p>
-    </div>
-  </div> -->
-
-  <img src="/Nuts/assets/slider-3-B-9_6CVd.png" alt="photo" class="benefit__card-img" />
-
-  <div class="benefit__card-overlay">
-    <div class="benefit__card-info">
-      <svg class="benefit__card-svg-dog-rose">
-        <use href="#dog-rose"></use>
-      </svg>
-      <h3 class="benefit__card-title">Шиповник</h3>
-      
-      <div class="benefit__card-text-box">
-        <p class="benefit__card-text">
-          Дерево жизни - так часто величают грецкий орех, поскольку с давних пор
-          он кормил, восстанавливал силы и лечил человека.
-        </p>
-
-        <p class="benefit__card-text">
-          Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая
-          профилактика многих заболеваний
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="benefits__card-overlay">
-   
-  </div> -->
-</div>
-
-            </div>
-          </div>
-        </section>
-
-        <section class="promo promo_big promo_sec-var">
-  <div class="promo__container">
-
-    <div class="promo__pos-links">
-      <a href="#" class="promo__pos-link">Главная</a>
-      <svg class="promo__pos-svg">
-        <use href="#arrow-left"></use>
-      </svg>
-      <p class="promo__pos-text">{=$currentPosition}</p>
-    </div>
-
-    <div class="promo__content">
-      <h1 class="promo__title">Эко продукция</h1>
-
-      <p class="promo__text">Выращиваем каждое деревцо с любовью, на экологически 
-чистой земле, без использования пестицидов и химии</p>
-
-      <a href="#" class="promo__video-link">
-        <svg class="promo__svg">
-          <use href="#eco"></use>
+      <div class="tabs__tab" data-tab="#tab2">
+        <svg class="tabs__svg-car">
+          <use href="#car"></use>
         </svg>
-      </a>
 
-      <p class="promo__descr-text">Cмотреть видео о производстве</p>
+        <p class="tabs__text">партии</p>
+      </div>
+
+      <div class="tabs__tab" data-tab="#tab3">
+        <svg class="tabs__svg-return">
+          <use href="#return"></use>
+        </svg>
+
+        <p class="tabs__text">Возврат товара</p>
+      </div>
+    </div>
+
+    <div class="payment__content payment__content_active" id="tab1">
+
+      <div class="payment__content-info">
+        <h3 class="payment__content-title">Способы оплаты</h3>
+
+        <div class="payment__content-info-box">
+          
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#uncash-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">Безналичный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
+            карту, или в терминалах.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#card-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">
+              Оплата с помощью банковской карты
+            </p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#cash-pay"></use>
+            </svg>
+
+            <p class="payment__content-descr-text">Наличный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплата заказов наложенным платежом в отделении Новой Почты, или
+            наличными курьерами
+          </p>
+        </div>
+      </div>
+
+      <img src="/Nuts/assets/men-with-note-DMn2uxo2.png" alt="" class="payment__content-img">
+    </div>
+
+    <div class="payment__content" id="tab2">
+
+      <div class="payment__content-info">
+        <h3 class="payment__content-title">Способы оплаты</h3>
+
+        <div class="payment__content-info-box">
+          
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#uncash-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">Безналичный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
+            карту, или в терминалах.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#card-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">
+              Оплата с помощью банковской карты
+            </p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#cash-pay"></use>
+            </svg>
+
+            <p class="payment__content-descr-text">Наличный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплата заказов наложенным платежом в отделении Новой Почты, или
+            наличными курьерами
+          </p>
+        </div>
+      </div>
+
+      <img src="/Nuts/assets/two-men-1BxQVkGd.png" alt="" class="payment__content-img">
+    </div>
+
+    <div class="payment__content" id="tab3">
+
+      <div class="payment__content-info">
+        <h3 class="payment__content-title">Способы оплаты</h3>
+
+        <div class="payment__content-info-box">
+          
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#uncash-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">Безналичный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
+            карту, или в терминалах.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#card-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">
+              Оплата с помощью банковской карты
+            </p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#cash-pay"></use>
+            </svg>
+
+            <p class="payment__content-descr-text">Наличный расчет</p>
+          </div>
+
+          <p class="payment__content-text">
+            Оплата заказов наложенным платежом в отделении Новой Почты, или
+            наличными курьерами
+          </p>
+        </div>
+      </div>
+
+      <img src="/Nuts/assets/men-with-note-DMn2uxo2.png" alt="" class="payment__content-img">
     </div>
   </div>
-  <img class="promo__img" alt="photo" src="/Nuts/assets/nuts-in-hand-CTvwb5eB.png" />
-
-  <div class="video">
-    <iframe
-      width="100%"
-      height="100%"
-      src="https://www.youtube.com/embed/hT4O8VI__XE?si=H1z3tfFuYTZChBhE"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </div>
-
-  <svg class="video-close">
-    <use href="#menu-close"></use>
-  </svg>
 </section>
 
-<!-- src="src/assets/images/main/wood.png"  -->
-
-
-        <section class="section news">
-          <div class="news__container">
-            <h2 class="section__title news__title">Новости</h2>
-
-            <p class="section__descr news__descr">
-              Свежие новости и полезная информация
-            </p>
-
-            <div class="swiper news__slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="news__card">
-  <div class="news__card-img-box">
-    <img src="/Nuts/assets/news-1-B754IsTI.png" alt="" class="news__img" />
-    <a href="#" class="news__video-link">
-      <svg class="news__video-svg">
-        <use href="#video-link"></use>
-      </svg>
-    </a>
-  </div>
-
-  <div class="news__card-inner">
-    <p class="news__card-date">12.04.2019</p>
-
-    <h3 class="news__card-title">Центр поддержки экспорта, в студии
-Павел Тулба</h3>
-
-    <p class="news__card-text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</p>
-
-    <a href="#" class="news__card-link"
-      >Читать
-      <svg class="news__card-svg">
-        <use href="#link-arrow"></use>
-      </svg>
-    </a>
-  </div>
-</div>
-
-                </div>
-                <div class="swiper-slide">
-                  <div class="news__card">
-  <div class="news__card-img-box">
-    <img src="/Nuts/assets/news-2-ow4st37p.png" alt="" class="news__img" />
-    <a href="#" class="news__video-link">
-      <svg class="news__video-svg">
-        <use href="#video-link"></use>
-      </svg>
-    </a>
-  </div>
-
-  <div class="news__card-inner">
-    <p class="news__card-date">12.04.2019</p>
-
-    <h3 class="news__card-title">В Одесской области состоялся масштабный
-торгово - экспортный форум</h3>
-
-    <p class="news__card-text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</p>
-
-    <a href="#" class="news__card-link"
-      >Читать
-      <svg class="news__card-svg">
-        <use href="#link-arrow"></use>
-      </svg>
-    </a>
-  </div>
-</div>
-
-                </div>
-                <div class="swiper-slide">
-                  <div class="news__card">
-  <div class="news__card-img-box">
-    <img src="/Nuts/assets/news-3-Umh5javl.png" alt="" class="news__img" />
-    <a href="#" class="news__video-link">
-      <svg class="news__video-svg">
-        <use href="#video-link"></use>
-      </svg>
-    </a>
-  </div>
-
-  <div class="news__card-inner">
-    <p class="news__card-date">12.04.2019</p>
-
-    <h3 class="news__card-title news__card-title_last">Сертификация органического
-производителя</h3>
-
-    <p class="news__card-text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</p>
-
-    <a href="#" class="news__card-link"
-      >Читать
-      <svg class="news__card-svg">
-        <use href="#link-arrow"></use>
-      </svg>
-    </a>
-  </div>
-</div>
-
-                </div>
-                <div class="swiper-slide">
-                  <div class="news__card">
-  <div class="news__card-img-box">
-    <img src="/Nuts/assets/news-1-B754IsTI.png" alt="" class="news__img" />
-    <a href="#" class="news__video-link">
-      <svg class="news__video-svg">
-        <use href="#video-link"></use>
-      </svg>
-    </a>
-  </div>
-
-  <div class="news__card-inner">
-    <p class="news__card-date">12.04.2019</p>
-
-    <h3 class="{=$titleClass}">Центр поддержки экспорта, в студии
-Павел Тулба</h3>
-
-    <p class="news__card-text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</p>
-
-    <a href="#" class="news__card-link"
-      >Читать
-      <svg class="news__card-svg">
-        <use href="#link-arrow"></use>
-      </svg>
-    </a>
-  </div>
-</div>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="news__button-prev">
-              <svg class="card__slider-svg info__button-svg">
-                <use href="#button-prev"></use>
-              </svg>
-            </div>
-
-            <div class="news__button-next">
-              <svg class="card__slider-svg info__button-svg">
-                <use href="#button-next"></use>
-              </svg>
-            </div>
-
-            <a href="#" class="button button-white news__button"
-              >Смотреть все новости</a
-            >
-          </div>
-        </section>
 
         <section class="section contacts">
   <div class="contacts__container">
@@ -2361,13 +1579,7 @@
   </div>
 </footer>
 
-
     </div>
-    <!-- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script> -->
-    <!-- <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script> -->
+
   </body>
 </html>
