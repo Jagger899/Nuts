@@ -6,6 +6,8 @@ import { mainSwiperWork } from "./components/swiper";
 import { infoSwiperWork } from "./components/info-swiper";
 import { newsSwiperWork } from "./components/news-swiper";
 import { promoVideoPlay } from "./components/promoVideo";
+// import { firebaseWork } from "./components/firebase";
+import { cardFromFb } from "./components/firebaseTestCard";
 
 // import { googleMaps } from "./components/googleMap";
 // import { benefitCardOverlay } from "./components/benefitCardOverlay";
@@ -19,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
   infoSwiperWork();
   newsSwiperWork();
   promoVideoPlay();
+  cardFromFb();
+  // firebaseWork();
   // googleMaps();
   // benefitCardOverlay();
 });

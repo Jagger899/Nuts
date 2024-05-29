@@ -1,4 +1,4 @@
-<div class="{=$class}">
+<!-- <div class="{=$class}">
   <img src="{=$srcTooltip}" alt="tooltip" class="card__tooltip">
 
   <svg class="card__search-svg">
@@ -66,6 +66,81 @@
     <div class="card__price-box">
       <p class="card__price">Цена:</p>
       <p class="card__price-number">19 грн</p>
+      <p class="card__price-old-number">21 грн.</p>
+    </div>
+
+    <a href="#" class="button button-green card__button">Купить</a>
+  </div>
+</div> -->
+
+<div class="{=$class}">
+  <img src="{=$srcTooltip}" alt="tooltip" class="card__tooltip">
+
+  <svg class="card__search-svg">
+    <use href="#search-product"></use>
+  </svg>
+
+  <div class="swiper card__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="{=$imgSrc}" alt="photo" class="{=$imgClass}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="{=$imgSrc}" alt="photo" class="{=$imgClass}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="{=$imgSrc}" alt="photo" class="{=$imgClass}" />
+      </div>
+    </div>
+
+    <div class="button-prev">
+      <svg class="card__slider-svg">
+        <use href="#button-prev"></use>
+      </svg>
+    </div>
+    <div class="button-next">
+      <svg class="card__slider-svg">
+        <use href="#button-next"></use>
+      </svg>
+    </div>
+  </div>
+
+  <h3 class="card__title"></h3>
+
+  <p class="card__article"></p>
+
+  <p class="card__descr"></p>
+
+  <div class="card__info">
+    <div class="card__info-box">
+      <svg class="card__weight-svg">
+        <use href="#weights"></use>
+      </svg>
+
+      <div class="card__info-block">
+        <p class="card__info-annot">Масса:</p>
+        <p class="card__info-value"></p>
+      </div>
+    </div>
+
+    <div class="card__info-box">
+      <svg class="card__package-svg">
+        <use href="#bag"></use>
+      </svg>
+
+      <div class="card__info-block">
+        <p class="card__info-annot">Упаковка</p>
+        <p class="card__info-value"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card__payment">
+    <div class="card__price-box">
+      <p class="card__price">Цена:</p>
+      <p class="card__price-number"></p>
       <p class="card__price-old-number">21 грн.</p>
     </div>
 

@@ -1,7 +1,7 @@
 <section class="payment">
   <div class="payment__container">
     <div class="tabs">
-      <div class="tabs__tab" data-tab="#tab1">
+      <div class="tabs__tab tabs__tab_active" data-tab="#tab1">
         <svg class="tabs__svg-pay">
           <use href="#pay"></use>
         </svg>
@@ -24,6 +24,58 @@
 
         <p class="tabs__text">Возврат товара</p>
       </div>
+    </div>
+
+    <div class="payment__content" id="tab2">
+
+      <div class="payment__content-info">
+        <h3 class="payment__content-title">Доставка</h3>
+
+        <div class="payment__content-info-box">
+          
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#uncash-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">Новая почта</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать получить посылку в любом отделении новой почты либо курьерской доставкой.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#card-pay"></use>
+            </svg>
+            <p class="payment__content-descr-text">
+              УкрПочта
+            </p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать получить посылку в любом отделении Укрпочты либо курьерской доставкой.
+          </p>
+        </div>
+
+        <div class="payment__content-info-box">
+          <div class="payment__content-descr-box">
+            <svg class="payment__content-svg">
+              <use href="#cash-pay"></use>
+            </svg>
+
+            <p class="payment__content-descr-text">Meest Express</p>
+          </div>
+
+          <p class="payment__content-text">
+            Вы можете выбрать получить посылку в любом отделении Meest Express либо курьерской доставкой.
+          </p>
+        </div>
+      </div>
+
+      <img src="../../assets/images/reused/two-men.png" alt="" class="payment__content-img">
     </div>
 
     <div class="payment__content payment__content_active" id="tab1">
@@ -80,64 +132,10 @@
       <img src="../../assets/images/payment/men-with-note.png" alt="" class="payment__content-img">
     </div>
 
-    <div class="payment__content" id="tab2">
-
-      <div class="payment__content-info">
-        <h3 class="payment__content-title">Способы оплаты</h3>
-
-        <div class="payment__content-info-box">
-          
-          <div class="payment__content-descr-box">
-            <svg class="payment__content-svg">
-              <use href="#uncash-pay"></use>
-            </svg>
-            <p class="payment__content-descr-text">Безналичный расчет</p>
-          </div>
-
-          <p class="payment__content-text">
-            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
-            карту, или в терминалах.
-          </p>
-        </div>
-
-        <div class="payment__content-info-box">
-          <div class="payment__content-descr-box">
-            <svg class="payment__content-svg">
-              <use href="#card-pay"></use>
-            </svg>
-            <p class="payment__content-descr-text">
-              Оплата с помощью банковской карты
-            </p>
-          </div>
-
-          <p class="payment__content-text">
-            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
-          </p>
-        </div>
-
-        <div class="payment__content-info-box">
-          <div class="payment__content-descr-box">
-            <svg class="payment__content-svg">
-              <use href="#cash-pay"></use>
-            </svg>
-
-            <p class="payment__content-descr-text">Наличный расчет</p>
-          </div>
-
-          <p class="payment__content-text">
-            Оплата заказов наложенным платежом в отделении Новой Почты, или
-            наличными курьерами
-          </p>
-        </div>
-      </div>
-
-      <img src="../../assets/images/reused/two-men.png" alt="" class="payment__content-img">
-    </div>
-
     <div class="payment__content" id="tab3">
 
       <div class="payment__content-info">
-        <h3 class="payment__content-title">Способы оплаты</h3>
+        <h3 class="payment__content-title">Способы возврата</h3>
 
         <div class="payment__content-info-box">
           
@@ -145,12 +143,11 @@
             <svg class="payment__content-svg">
               <use href="#uncash-pay"></use>
             </svg>
-            <p class="payment__content-descr-text">Безналичный расчет</p>
+            <p class="payment__content-descr-text">Зафявление директору</p>
           </div>
 
           <p class="payment__content-text">
-            Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на
-            карту, или в терминалах.
+            Вы можете выбрать вернуть товар, приехав и написав заявление на имя директора.
           </p>
         </div>
 
@@ -160,12 +157,12 @@
               <use href="#card-pay"></use>
             </svg>
             <p class="payment__content-descr-text">
-              Оплата с помощью банковской карты
+              Звонок менеджеру по возвратам
             </p>
           </div>
 
           <p class="payment__content-text">
-            Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+             Вы можете выбрать вернуть товар, позвонив менеджеру по возвратам.
           </p>
         </div>
 
@@ -175,17 +172,16 @@
               <use href="#cash-pay"></use>
             </svg>
 
-            <p class="payment__content-descr-text">Наличный расчет</p>
+            <p class="payment__content-descr-text">Предоставление справки</p>
           </div>
 
           <p class="payment__content-text">
-            Оплата заказов наложенным платежом в отделении Новой Почты, или
-            наличными курьерами
+             Вы можете выбрать вернуть деньги за товар, если предоставите справку Государственной служба Украины по вопросам безопасности пищевых продуктов и защите потребителей о том, что продукция некачественная.
           </p>
         </div>
       </div>
 
-      <img src="../../assets/images/payment/men-with-note.png" alt="" class="payment__content-img">
+      <img src="../../assets/images/for-clients/basket-in-shop.png" alt="" class="payment__content-img">
     </div>
   </div>
 </section>

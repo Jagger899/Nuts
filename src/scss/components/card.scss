@@ -105,6 +105,10 @@
     color: #000;
     margin-bottom: 13px;
     max-width: 240px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
   }
 
   &__info {

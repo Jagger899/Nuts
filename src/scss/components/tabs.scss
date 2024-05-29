@@ -1,0 +1,105 @@
+.tabs {
+    max-width: 1062px;
+    margin: 0 auto 64px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 25px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: rgba(0, 0, 0, 0.06);
+      height: 1px;
+      width: 300%;
+      bottom: -22px;
+      left: -100%;
+    }
+
+    &__tab {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      &_active {
+        color: $greenColor;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -14px;
+          width: 100%;
+          height: 3px;
+          background: $greenColor;
+          left: 0;
+        }
+
+        .tabs__svg-pay,
+        .tabs__svg-car,
+        .tabs__svg-return {
+          fill: $greenColor;
+        }
+      }
+    }
+
+    &__svg-pay {
+      width: 37px;
+      height: 37px;
+      fill: $svgGreyColor;
+
+      @include media-breakpoint-down(sm) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
+    }
+
+    &__svg-car {
+      width: 45px;
+      height: 45px;
+      fill: $svgGreyColor;
+
+      @include media-breakpoint-down(sm) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
+    }
+
+    &__svg-return {
+      width: 36px;
+      height: 36px;
+      fill: $svgGreyColor;
+
+      @include media-breakpoint-down(sm) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
+    }
+
+    &__text {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.01em;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
+    }
+  }

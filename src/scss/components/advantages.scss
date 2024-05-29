@@ -1,6 +1,10 @@
 .advantages {
   padding: 150px 0 72px;
 
+  &_sec-var {
+    padding-top: 0;
+  }
+
   &__container {
     max-width: 1160px;
   }
