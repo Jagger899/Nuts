@@ -282,6 +282,10 @@
       gap: 10px;
       position: relative;
       top: 36px;
+
+      @include media-breakpoint-down(sm) {
+        top: 15px;
+      }
     }
   }
 
@@ -307,5 +311,30 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     color: $whiteColor;
+  }
+
+  &_fourth-var {
+    .promo__title {
+      text-align: center;
+    }
+
+    .promo__text {
+      display: block;
+    }
+
+    .promo__video-link {
+      display: none;
+    }
+
+    .promo__container {
+      padding-top: 0;
+    }
+
+    .promo__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }

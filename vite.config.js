@@ -45,6 +45,7 @@ export default {
         // gallary: resolve(__dirname, "/pages/gallary/index.html"),
         gallary: resolve(__dirname, "src/html/pages/gallary.html"),
         payment: resolve(__dirname, "src/html/pages/payment.html"),
+        forClients: resolve(__dirname, "src/html/pages/for-clients.html.html"),
       },
     },
   },

@@ -1,105 +1,155 @@
 .tabs {
-    max-width: 1062px;
-    margin: 0 auto 64px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  max-width: 1062px;
+  margin: 0 auto 64px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 25px;
+  }
+
+  &_clients {
+    max-width: 100%;
 
     @include media-breakpoint-down(sm) {
-      margin-bottom: 25px;
+      flex-wrap: wrap;
+      gap: 30px;
     }
 
-    &:after {
-      content: "";
-      position: absolute;
-      background: rgba(0, 0, 0, 0.06);
-      height: 1px;
-      width: 300%;
-      bottom: -22px;
-      left: -100%;
-    }
-
-    &__tab {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      cursor: pointer;
-
-      &_active {
-        color: $greenColor;
-        position: relative;
-
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -14px;
-          width: 100%;
-          height: 3px;
-          background: $greenColor;
-          left: 0;
-        }
-
-        .tabs__svg-pay,
-        .tabs__svg-car,
-        .tabs__svg-return {
-          fill: $greenColor;
-        }
-      }
-    }
-
-    &__svg-pay {
-      width: 37px;
-      height: 37px;
-      fill: $svgGreyColor;
-
+    .tabs__svg {
       @include media-breakpoint-down(sm) {
-        width: 30px;
-        height: 30px;
-      }
-
-      @include media-breakpoint-down(xs) {
         display: none;
       }
     }
 
-    &__svg-car {
-      width: 45px;
-      height: 45px;
-      fill: $svgGreyColor;
-
-      @include media-breakpoint-down(sm) {
-        width: 30px;
-        height: 30px;
-      }
-
-      @include media-breakpoint-down(xs) {
-        display: none;
-      }
-    }
-
-    &__svg-return {
-      width: 36px;
-      height: 36px;
-      fill: $svgGreyColor;
-
-      @include media-breakpoint-down(sm) {
-        width: 30px;
-        height: 30px;
-      }
-
-      @include media-breakpoint-down(xs) {
-        display: none;
-      }
-    }
-
-    &__text {
-      font-weight: 800;
-      font-size: 20px;
-      line-height: 115%;
-      letter-spacing: 0.01em;
-
-      @include media-breakpoint-down(sm) {
+    .tabs__text {
+      @include media-breakpoint-down(md) {
         font-size: 16px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-width: 150px;
       }
     }
   }
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.06);
+    height: 1px;
+    width: 300%;
+    bottom: -22px;
+    left: -100%;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    &_active {
+      color: $greenColor;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -14px;
+        width: 100%;
+        height: 3px;
+        background: $greenColor;
+        left: 0;
+      }
+
+      .tabs__svg {
+        fill: $greenColor;
+      }
+    }
+  }
+
+  &__svg {
+    fill: $svgGreyColor;
+    @include media-breakpoint-down(sm) {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+
+    &_pay {
+      width: 37px;
+      height: 37px;
+    }
+
+    &_car {
+      width: 45px;
+      height: 45px;
+    }
+
+    &_return {
+      width: 36px;
+      height: 36px;
+    }
+
+    &_supermarket {
+      width: 37px;
+      height: 37px;
+    }
+
+    &_cafe {
+      width: 37px;
+      height: 37px;
+    }
+
+    &_restaurant {
+      width: 49px;
+      height: 49px;
+    }
+
+    &_sport-inv {
+      width: 45px;
+      height: 45px;
+    }
+
+    &_cake {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &__text {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+
+    &_first {
+      max-width: 149px;
+    }
+
+    &_second {
+      max-width: 101px;
+    }
+
+    &_third {
+      max-width: 103px;
+    }
+
+    &_fourth {
+      max-width: 146px;
+    }
+
+    &_fivth {
+      max-width: 145px;
+    }
+  }
+}

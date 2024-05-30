@@ -1,0 +1,96 @@
+@import "./utils.scss";
+
+@import "./components/header/header.scss";
+@import "./components/navigation.scss";
+@import "./components/language-select.scss";
+@import "./components/promo.scss";
+// @import "./components/info.scss";
+@import "./components/advantages.scss";
+@import "./components/tabs.scss";
+@import "./payment.scss";
+// @import "./components/benefit.scss";
+// @import "./components/news.scss";
+@import "./components/contacts.scss";
+@import "./components/logo-box.scss";
+@import "./components/socials.scss";
+@import "./components/gallary-cards.scss";
+@import "./components/footer.scss";
+
+.clients-info {
+  padding: 81px 0 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(lg) {
+      align-items: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 0.01em;
+    max-width: 406px;
+
+
+    @include media-breakpoint-down(md) {
+      font-size: 35px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 25px;
+    }
+  }
+
+  &__inner {
+  }
+
+  &__content {
+    display: flex;
+    max-width: 760px;
+    gap: 108px;
+
+    @include media-breakpoint-down(md) {
+      gap: 30px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      gap: 10px;
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 327px;
+    gap: 30px;
+  }
+
+  &__text-strong {
+    font-weight: 700;
+  }
+}
