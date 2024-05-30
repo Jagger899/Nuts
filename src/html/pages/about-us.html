@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../scss/about-us.scss" />
+    <title>About Company</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <load src="src/html/components/sprite.html" />
+      <load src="src/html/components/header.html" class="header" />
+
+      <main class="main">
+        <load
+          src="src/html/components/promo/promo.html"
+          title="Орех Причерноморья"
+          text="Единственный в Украине сад совместного 
+выращивание фундука и грецкого ореха"
+          imgSrc="../../assets/images/about/meshes.png"
+          class="promo promo_with-pos-links"
+          svgHref="#video-link"
+          currentPosition="О производстве
+"
+        />
+
+        <section class="section info">
+          <div class="info__container">
+            <div class="info__inner">
+              <load
+                src="src/html/components/info/info-title.html"
+                title="О производителе"
+              />
+              <div class="info__descr-box">
+                <load
+                  src="src/html/components/info/info-descr-text-with-span.html"
+                  class="info__descr-text"
+                  coloryText="Сельскохозяйственный обслуживающий кооператив 
+                  “Орех Причерноморья”"
+                  descrText="выращивает смешанные сады 
+                    ореха грецкого с фундуком, а также ореха грецкого 
+                    с шиповником, на площади более 150 гектаров. "
+                  class="info__descr-text"
+                />
+
+                <load
+                  src="src/html/components/info/info-descr-text.html"
+                  descrText="Помимо этого кооператив занимается выращиванием 
+                  посадочного материала, саженцов привитого и непривитого 
+                  грецкого ореха, фундука и шиповника."
+                  class="info__descr-text"
+                />
+
+                <a href="#" class="button button-white info__button"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper info__slider">
+              <div class="swiper-wrapper">
+                <load
+                  class="swiper-slide"
+                  src="src/html/components/info/info-swiper-slide.html"
+                  imgSrc="../../assets/images/reused/tractor-slider-1.png"
+                />
+
+                <load
+                  class="swiper-slide"
+                  src="src/html/components/info/info-swiper-slide.html"
+                  imgSrc="../../assets/images/reused/tractor-slider-2.png"
+                />
+
+                <load
+                  class="swiper-slide"
+                  src="src/html/components/info/info-swiper-slide.html"
+                  imgSrc="../../assets/images/reused/tractor-field.png"
+                />
+              </div>
+
+              <div class="info__button-prev">
+                <svg class="card__slider-svg info__button-svg">
+                  <use href="#button-prev"></use>
+                </svg>
+              </div>
+
+              <div class="info__button-next">
+                <svg class="card__slider-svg info__button-svg">
+                  <use href="#button-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="director">
+          <div class="director__container">
+            <div class="director__inner">
+              <div class="director__content">
+                <img
+                  src="../../assets/images/about/director.png"
+                  alt="director"
+                  class="director__img"
+                />
+
+                <div class="director__info">
+                  <h3 class="director__title">Павел Тулба</h3>
+
+                  <p class="director__text">
+                    Учередитель и владелец предприятия “Орех Причерноморья”
+                  </p>
+
+                  <p class="director__quote">
+                    Главная наша цель – получить максимальную прибыль с одного
+                    гектара.
+                  </p>
+
+                  <a href="#" class="button button-white director__button">Написать нам</a>
+                </div>
+              </div>
+
+              <div class="director__history">
+                <h3 class="director__history-title">История предприятия</h3>
+
+                <p class="director__history-text">
+                  Наше предприятие основано в 2012 году для закладки смешанного
+                  сада грецкого ореха и фундука.
+                </p>
+
+                <p class="director__history-text">
+                  На сегодня мы уже заложили более 100 гектаров сада и
+                  продолжаем расширять свои насаждения. Кроме выращивания
+                  грецкого ореха и фундука, мы занимаемся выращиванием саженцев,
+                  разведением и выращиванием овец, а также являемся первой в
+                  Украине компанией, приступившей к промышленному выращиванию
+                  трюфелей на корнях фундука.
+                </p>
+
+                <p class="director__history-text">
+                  Земля, которой пользуется кооператив, является собственностью
+                  членов нашего кооператива.
+                </p>
+
+                <svg class="director__history-svg">
+                  <use href="#overlay-decor"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <load
+          src="src/html/components/advantages.html"
+          class="advantages advantages_sec-var"
+        />
+
+        <section class="section gallary">
+
+          <h2 class="section__title">Галерея</h2>
+          <h3 class="section__descr">Кадры социальной активности компании</h3>
+
+          <div class="gallary__container">
+            <div class="gallary__cards">
+              <div class="gallary__cards-top">
+                <load
+                  src="src/html/components/gallary/gallary-card.html"
+                  class="gallary__card card-big"
+                  imgSrc="../../assets/images/reused/two-men.png"
+                  overlayImgSrc="../../assets/images/reused/green-card-overlay.png"
+                />
+
+                <load
+                  src="src/html/components/gallary/gallary-card.html"
+                  class="gallary__card"
+                  imgSrc="../../assets/images/reused/field.png"
+                />
+
+                <load
+                  src="src/html/components/gallary/gallary-card-promo.html"
+                  promoImgSrc="../../assets/images/reused/three-hum-field.png"
+                  class="gallary__card-promo gallary__card-promo_big"
+                />
+
+                <load
+                  src="src/html/components/gallary/gallary-card.html"
+                  class="gallary__card"
+                  imgSrc="../../assets/images/reused/tractor-field.png"
+                />
+
+                <load
+                  src="src/html/components/gallary/gallary-card.html"
+                  class="gallary__card"
+                  imgSrc="../../assets/images/reused/garden.png"
+                />
+
+                <load
+                  src="src/html/components/gallary/gallary-card.html"
+                  class="gallary__card"
+                  imgSrc="../../assets/images/reused/one-man.png"
+                />
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <load src="src/html/components/contacts.html" />
+      </main>
+
+      <load src="src/html/components/footer.html" />
+    </div>
+
+    <script src="../../ts/aboutUs.ts" type="module"></script>
+  </body>
+</html>

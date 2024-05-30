@@ -17,18 +17,18 @@
   &__container {
     position: relative;
     height: 100%;
-    padding-top: 185px;
+    // padding-top: 185px;
     // display: flex;
     // justify-content: center;
     // align-items: center;
 
-    @include media-breakpoint-down(md) {
-      padding-top: 80px;
-    }
+    // @include media-breakpoint-down(md) {
+    //   padding-top: 80px;
+    // }
 
-    @include media-breakpoint-down(sm) {
-      padding-top: 40px;
-    }
+    // @include media-breakpoint-down(sm) {
+    //   padding-top: 40px;
+    // }
   }
 
   &__content {
@@ -36,6 +36,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
   }
 
   &__title {
@@ -44,6 +49,8 @@
     letter-spacing: 0.01em;
     color: $whiteColor;
     margin-bottom: 20px;
+    white-space: nowrap;
+    // text-align: center;
 
     @include media-breakpoint-down(md) {
       font-size: 42px;

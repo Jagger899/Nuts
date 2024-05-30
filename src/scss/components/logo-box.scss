@@ -21,5 +21,10 @@
   &__svg {
     width: 54px;
     height: 54px;
+
+    @include media-breakpoint-down(md) {
+      width: 29px;
+      height: 29px;
+    }
   }
 }
