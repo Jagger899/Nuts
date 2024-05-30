@@ -34,91 +34,14 @@ export const cardFromFb = function () {
 
   getCollectionData("productCard");
 
-  // async function displayData() {
-  //   const data = await getCollectionData("productCard");
-  //   console.log(data);
-
-  //   // interface cardInfo {
-  //   //   productName: string;
-  //   //   arcticle: number;
-  //   //   description: string;
-  //   //   weight: number;
-  //   //   package: string;
-
-  //   // }
-  //   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  //   data.forEach((item:any) => {
-
-  //     const card = document.querySelector(".card");
-  //     console.log(card);
-  //     card.innerHTML = `
-
-  //     <h3 class="card__title">${item.productName}</h3>
-  //     <p class="card__article">${item.arcticle}</p>
-  //     <p class="card__descr">${item.description}</p>
-  //     <div class="card__info">
-  //       <div class="card__info-box">
-  //         <svg class="card__weight-svg">
-  //           <use href="#weights"></use>
-  //         </svg>
-  //         <div class="card__info-block">
-  //           <p class="card__info-annot">Масса:</p>
-  //           <p class="card__info-value">${item.weight}</p>
-  //         </div>
-  //       </div>
-  //       <div class="card__info-box">
-  //         <svg class="card__package-svg">
-  //           <use href="#bag"></use>
-  //         </svg>
-  //         <div class="card__info-block">
-  //           <p class="card__info-annot">Упаковка</p>
-  //           <p class="card__info-value">${item.package}</p>
-  //         </div>
-  //       </div>
-  //     </div>
-  //     <div class="card__payment">
-  //       <div class="card__price-box">
-  //         <p class="card__price">Цена:</p>
-  //         <p class="card__price-number">${item.price}</p>
-  //         <p class="card__price-old-number">${item.oldPrice}</p>
-  //       </div>
-  //       <a href="#" class="button button-green card__button">Купить</a>
-  //     </div>
-  //   `;
-
-  //   });
-  // }
-
-  // displayData();
-
-  // async function fillData() {
-  //   const data = await getCollectionData("productCard");
-
-  //   data.forEach((item) => {
-  //     const cardTitle = document.querySelector(".card__title");
-  //     const cardArticle = document.querySelector(".card__article");
-  //     const cardDescr = document.querySelector(".card__descr");
-  //     const cardInfoValue = document.querySelectorAll(".card__info-value");
-  //     const cardPriceNumber = document.querySelector(".card__price-number");
-
-  //     cardTitle.textContent = item.productName;
-  //     cardArticle.textContent = "Aрт. " + item.arcticle;
-  //     cardDescr.textContent = item.description;
-  //     cardInfoValue[0].textContent = item.weight + " гр";
-  //     cardInfoValue[1].textContent = item.package;
-  //     cardPriceNumber.textContent = item.price + "грн";
-  //   });
-  // }
-
-  // fillData();
-
+  
   async function fillData() {
     const querySnapshot = await getDocs(collectionGroup(db, "productCard"));
-    const cards = document.querySelectorAll(".card"); // предполагается, что у каждой карточки есть общий класс 'card'
+    const cards = document.querySelectorAll(".card"); 
     let index = 0;
     querySnapshot.forEach((doc) => {
       if (index < cards.length) {
-        // проверяем, что есть карточка для этого документа
+        
         const data = doc.data();
         const card = cards[index];
 
