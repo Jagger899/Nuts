@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../scss/all-news.scss" />
+    <title>All news</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <load src="src/html/components/header.html" class="header" />
+      <load src="src/html/components/sprite.html" />
+
+      <main class="main">
+        <load
+          src="src/html/components/position-links.html"
+          currentPosition="Новости и статьи"
+        />
+
+        <section class="section all-news">
+          <div class="all-news__container">
+            <h2 class="section__title all-news__title">Новости и статьи</h2>
+            <p class="section__descr all-news__descr">
+              Свежие новости и полезная информация
+            </p>
+
+            <div class="all-news__content">
+              <div class="all-news__card news__card_big">
+                <img
+                  src="../../assets/images/news/main-news.png"
+                  alt="#"
+                  class="all-news__card-img"
+                />
+
+                <div class="all-news__card-info">
+                  <p class="news__card-date">12.04.2019</p>
+
+                  <h3 class="news__card-title">
+                    Центр поддержки экспорта, в студии Павел Тулба
+                  </h3>
+
+                  <div class="news__card-text-box">
+                    <p class="news__card-text">
+                      Сельскохозяйственный обслуживающий кооператив “Орех
+                      Причерноморья” предлагает своим клиентам выгодные условия
+                      сотрудничества.
+                    </p>
+
+                    <p class="news__card-text">
+                      Ореховый бизнес – один из наиболее перспективных в
+                      Украине. Ежегодная нехватка продукта в Европе составляет
+                      100 000 тонн. У Вас есть возможность зарабатывать десятки
+                      тысяч долларов в год всего на нескольких гектарах земли.
+                    </p>
+
+                    <a href="#" class="news__card-link"
+                      >Читать
+                      <svg class="news__card-svg">
+                        <use href="#link-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <load
+                src="src/html/components/news/news-card.html"
+                imgSrc="../../assets/images/reused/news-1.png"
+                titleClass="news__card-title"
+                newsTitle="Центр поддержки экспорта, в студии
+Павел Тулба"
+                newsText="Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную..."
+              />
+
+              <load
+                src="src/html/components/news/news-card.html"
+                imgSrc="../../assets/images/reused/news-2.png"
+                titleClass="news__card-title"
+                newsTitle="В Одесской области состоялся масштабный
+торгово - экспортный форум"
+                newsText="Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную..."
+              />
+
+              <load
+                src="src/html/components/news/news-card.html"
+                imgSrc="../../assets/images/reused/news-3.png"
+                titleClass="news__card-title news__card-title_last"
+                newsTitle="Сертификация органического
+производителя"
+                newsText="Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную..."
+              />
+            </div>
+          </div>
+        </section>
+
+        <load src="src/html/components/contacts.html" />
+      </main>
+
+      <load src="src/html/components/footer.html" />
+    </div>
+
+    <script src="../../ts/allNews.ts" type="module"></script>
+  </body>
+</html>

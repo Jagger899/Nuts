@@ -1,0 +1,97 @@
+@import "./utils.scss";
+
+@import "./components/header/header.scss";
+@import "./components/navigation.scss";
+@import "./components/language-select.scss";
+@import "./components/promo.scss";
+@import "./components/position-links.scss";
+// @import "./components/info.scss";
+// @import "./components/advantages.scss";
+// @import "./components/benefit.scss";
+@import "./components/news.scss";
+@import "./components/contacts.scss";
+@import "./components/logo-box.scss";
+@import "./components/socials.scss";
+@import "./components/gallary-cards.scss";
+@import "./components/footer.scss";
+
+.all-news {
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+
+    @include media-breakpoint-down(lg) {
+      width: 408px;
+      gap: 0;
+      
+    }
+  }
+
+  &__card-img {
+    width: 849px;
+    aspect-ratio: 1.51 / 1;
+
+    @include media-breakpoint-down(lg) {
+      width: 308px;
+      margin-bottom: 22px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 308px;
+    }
+  }
+
+  &__card {
+    grid-column: 1 / 4;
+
+    @include media-breakpoint-down(lg) {
+      grid-column: 1 / 1;
+
+      // flex-direction: column;
+      // justify-content: baseline;
+      display: block;
+    }
+  }
+
+  .news__card-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 118%;
+    letter-spacing: 0.01em;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 58px 32px;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      gap: 10px;
+    }
+  }
+
+
+
+  .news__card-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156%;
+
+    &:nth-child(2) {
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+
+  .news__card-inner {
+    padding: 0;
+  }
+}

@@ -47,6 +47,7 @@ export default {
         payment: resolve(__dirname, "src/html/pages/payment.html"),
         forClients: resolve(__dirname, "src/html/pages/for-clients.html"),
         aboutUs: resolve(__dirname, "src/html/pages/about-us.html"),
+        allNews: resolve(__dirname, "src/html/pages/news.html"),
       },
     },
   },
