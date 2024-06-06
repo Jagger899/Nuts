@@ -308,6 +308,8 @@
 
     &_active {
       transform: translateX(0);
+      height: 100%;
+      overflow: auto;
     }
 
     &__top {

@@ -16,6 +16,21 @@
 @import "./components/footer.scss";
 
 .all-news {
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
+
+  &__title {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__descr {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
+  }
   &__card {
     display: flex;
     justify-content: space-between;
@@ -25,7 +40,6 @@
     @include media-breakpoint-down(lg) {
       width: 408px;
       gap: 0;
-      
     }
   }
 
@@ -34,7 +48,7 @@
     aspect-ratio: 1.51 / 1;
 
     @include media-breakpoint-down(lg) {
-      width: 308px;
+      width: 408px;
       margin-bottom: 22px;
     }
 
@@ -53,6 +67,10 @@
       // justify-content: baseline;
       display: block;
     }
+
+    @include media-breakpoint-down(md) {
+      width: 308px;
+    }
   }
 
   .news__card-title {
@@ -66,6 +84,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 58px 32px;
+    margin-bottom: 40px;
 
     @include media-breakpoint-down(lg) {
       grid-template-columns: 1fr 1fr;
@@ -75,9 +94,14 @@
     @include media-breakpoint-down(md) {
       gap: 10px;
     }
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
   }
-
-
 
   .news__card-text {
     font-weight: 500;
@@ -93,5 +117,34 @@
 
   .news__card-inner {
     padding: 0;
+  }
+
+  .news__card {
+    @include media-breakpoint-down(md) {
+      width: 308px;
+    }
+  }
+
+  .news__img {
+    @include media-breakpoint-down(md) {
+      width: 308px;
+    }
+  }
+
+  .video-svg {
+    width: 61px;
+    height: 61px;
+  }
+
+  .card__img {
+    width: 100%;
+    max-height: 556px;
+    height: 100%;
+    object-fit: cover;
+
+    @include media-breakpoint-down(md) {
+      height: 400px;
+      aspect-ratio: 1 / 2;
+    }
   }
 }

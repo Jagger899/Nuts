@@ -48,6 +48,7 @@ export default {
         forClients: resolve(__dirname, "src/html/pages/for-clients.html"),
         aboutUs: resolve(__dirname, "src/html/pages/about-us.html"),
         allNews: resolve(__dirname, "src/html/pages/news.html"),
+        oneNew: resolve(__dirname, "src/html/pages/one-new.html"),
       },
     },
   },

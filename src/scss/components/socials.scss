@@ -3,18 +3,34 @@
   align-items: center;
   gap: 20px;
 
+  &__link {
+    &:first-child > svg {
+      fill: $greenColor;
+    }
+  }
+
   &__svg {
     width: 13px;
     height: 13px;
     cursor: pointer;
 
-    &:hover {
-      fill: red;
-    }
-
     &:last-child {
       width: 16px;
       height: 16px;
     }
+
+    &_facebook {
+      fill:$greenLightColor;
+    }
+
+    &_instagramm {
+      fill:$blackTextColor;
+    }
+
+    &_youtube {
+      fill: $blackTextColor;
+    }
   }
+
+
 }
