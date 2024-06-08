@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../scss/catalogue.scss" />
+    <title>Catalogue</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <load
+        src="src/html/components/header.html"
+        class="header"
+        firstHref="src/html/pages/gallary.html"
+      />
+      <load src="src/html/components/sprite.html" />
+
+      <main class="main">
+        <load
+          src="src/html/components/promo/promo.html"
+          title="Каталог продукции"
+          text="Кадры социальной активности компании"
+          imgSrc="../../assets/images/payment/nuts-in-basket.png"
+          class="promo promo_small promo_with-pos-links"
+          svgHref="#video-link"
+          currentPosition="Магазин"
+        />
+
+        <section class="production">
+          <div class="production__container">
+
+            <div class="production__filter-box dropdown">
+              <div data-path="filter" class="dropdown__drop-box dropdown__drop-box_filter">
+                <p class="dropdown__fiter-text">Фильтр</p>
+
+                <svg class="dropdown__filter-svg">
+                  <use href="#filter"></use>
+                </svg>
+
+                <ul data-target="filter" class="dropdown__menu">
+                  <li class="dropdown__menu-item">Кукуруза</li>
+                  <li class="dropdown__menu-item">Миндаль</li>
+                  <li class="dropdown__menu-item">Кешью</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="production__inp-box">
+              <div class="production__filter-box dropdown">
+                <div data-path="taste" class="dropdown__drop-box dropdown__drop-box_inp">
+                  <p class="dropdown__fiter-text">Вкус</p>
+
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_inp">
+                    <use href="#arrow-down"></use>
+                  </svg>
+
+                  <ul data-target="taste" class="dropdown__menu">
+                    <li class="dropdown__menu-item">Сладкий</li>
+                    <li class="dropdown__menu-item">Соленый</li>
+                    <li class="dropdown__menu-item">безвкусный</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="production__filter-box dropdown">
+                <div data-path="weight" class="dropdown__drop-box dropdown__drop-box_inp-sec">
+                  <p class="dropdown__fiter-text">Масса</p>
+
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_inp">
+                    <use href="#arrow-down"></use>
+                  </svg>
+
+                  <ul data-target="weight" class="dropdown__menu">
+                    <li class="dropdown__menu-item">до 20</li>
+                    <li class="dropdown__menu-item">от 21 до 100</li>
+                    <li class="dropdown__menu-item">Свыше 100</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="production__filter-box production__filter-box_cost dropdown">
+              <div class="dropdown__drop-box dropdown__drop-box_cost">
+                <p class="dropdown__fiter-text">Стоимость</p>
+
+                <div class="dropdown__svg-box">
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_arr">
+                    <use href="#arrow-small"></use>
+                  </svg>
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_rot">
+                  <use href="#arrow-small"></use>
+                </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="production__filter-buttons">
+              <button class="button button-green production__active-filter">
+                Применить
+              </button>
+
+              <button class="button-reset">
+                <svg class="button-reset__svg">
+                  <use href="#filter-reset"></use>
+                </svg>
+
+                Сбросить
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <load src="src/html/components/contacts.html" />
+      </main>
+
+      <load src="src/html/components/footer.html" />
+    </div>
+
+    <script src="../../ts/catalogue.ts" type="module"></script>
+  </body>
+</html>

@@ -49,6 +49,7 @@ export default {
         aboutUs: resolve(__dirname, "src/html/pages/about-us.html"),
         allNews: resolve(__dirname, "src/html/pages/news.html"),
         oneNew: resolve(__dirname, "src/html/pages/one-new.html"),
+        catalogue: resolve(__dirname, "src/html/pages/catalogue.html"),
       },
     },
   },

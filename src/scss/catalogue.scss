@@ -1,0 +1,165 @@
+@import "./utils.scss";
+
+@import "./components/header/header.scss";
+@import "./components/navigation.scss";
+@import "./components/language-select.scss";
+@import "./components/promo.scss";
+// @import "./components/info.scss";
+@import "./components/advantages.scss";
+@import "./components/tabs.scss";
+@import "./payment.scss";
+// @import "./components/benefit.scss";
+// @import "./components/news.scss";
+@import "./components/contacts.scss";
+@import "./components/logo-box.scss";
+@import "./components/socials.scss";
+@import "./components/gallary-cards.scss";
+@import "./components/footer.scss";
+@import "./components/production.scss";
+
+.production {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inp-box {
+    display: flex;
+    gap: 28px;
+    margin-right: 51px;
+  }
+
+  &__filter-box {
+    &_cost {
+      margin-right: 161px;
+    }
+  }
+
+  &__filter-buttons {
+    display: flex;
+    gap: 46px;
+    align-items: center;
+  }
+
+  &__active-filter {
+    outline: none;
+    border: none;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+
+  .button-reset {
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    background: none;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    font-family: "Raleway";
+    color: $greyColor;
+    gap: 10px;
+  }
+
+  .button-reset__svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .dropdown {
+    &__drop-box {
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+
+      &_filter {
+        gap: 10px;
+        margin-right: 70px;
+      }
+
+      &_inp {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 283px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px 15px 17px;
+      }
+
+      &_inp-sec {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 139px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px 15px 17px;
+      }
+
+      &_cost {
+        gap: 15px;
+      }
+    }
+
+    &__svg-box {
+      display: flex;
+    }
+
+    &__filter-svg {
+      width: 22px;
+      height: 22px;
+
+      &_inp {
+        width: 13px;
+        height: 13px;
+      }
+
+      &_arr {
+        width: 15px;
+        height: 15px;
+        fill: $greyColor;
+
+        &:hover {
+          fill: $greenColor;
+        }
+      }
+
+      &_rot {
+        width: 15px;
+        height: 15px;
+        fill: $greyColor;
+        transform: rotate(180deg);
+
+        &:hover {
+          fill: $greenColor;
+        }
+      }
+    }
+
+    &__filter-text {
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 0.01em;
+    }
+
+    &__menu {
+      display: none;
+
+
+      &_active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top:55px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        left:-1px;
+        border-top: none;
+        padding-left: 15px;
+      }
+    }
+  }
+}
