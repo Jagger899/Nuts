@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>For Clients</title>
-    <script type="module" crossorigin src="/Nuts/assets/forClients-BNYlk9mm.js"></script>
+    <title>Catalogue</title>
+    <script type="module" crossorigin src="/Nuts/assets/catalogue-1hbISkjI.js"></script>
     <link rel="modulepreload" crossorigin href="/Nuts/assets/promoVideo-KdGnkAEo.js">
-    <link rel="modulepreload" crossorigin href="/Nuts/assets/tabs-D6fgMD9o.js">
-    <link rel="stylesheet" crossorigin href="/Nuts/assets/forClients-DXqy_KXG.css">
+    <link rel="modulepreload" crossorigin href="/Nuts/assets/news-swiper-DCeqkkc3.js">
+    <link rel="modulepreload" crossorigin href="/Nuts/assets/swiper-CJwqpOFA.js">
+    <link rel="modulepreload" crossorigin href="/Nuts/assets/firebaseTestCard-B6SOTk1X.js">
+    <link rel="stylesheet" crossorigin href="/Nuts/assets/news-swiper-wjhWB3DI.css">
+    <link rel="stylesheet" crossorigin href="/Nuts/assets/catalogue-BKxFyZIX.css">
   </head>
-  <body class="body">
+  <body>
     <div class="wrapper">
       <header class="header">
   <div class="header__container">
@@ -1328,7 +1331,7 @@
 
 
       <main class="main">
-        <section class="promo promo_fourth-var promo_with-pos-links">
+        <section class="promo promo_small promo_with-pos-links">
   <div class="promo__container">
 
     <div class="promo__pos-links">
@@ -1336,15 +1339,13 @@
       <svg class="promo__pos-svg">
         <use href="#arrow-left"></use>
       </svg>
-      <p class="promo__pos-text">Оптовым и корпоративным клиентам
-</p>
+      <p class="promo__pos-text">Магазин</p>
     </div>
 
     <div class="promo__content">
-      <h1 class="promo__title">Орех Причерноморья</h1>
+      <h1 class="promo__title">Каталог продукции</h1>
 
-      <p class="promo__text">Единственный в Украине сад совместного 
-выращивание фундука и грецкого ореха</p>
+      <p class="promo__text">Кадры социальной активности компании</p>
 
       <a href="#" class="promo__video-link">
         <svg class="promo__svg">
@@ -1355,7 +1356,7 @@
       <p class="promo__descr-text">Cмотреть видео о производстве</p>
     </div>
   </div>
-  <img class="promo__img" alt="photo" src="/Nuts/assets/nuts-in-bag-COfgCXCL.png" />
+  <img class="promo__img" alt="photo" src="/Nuts/assets/nuts-in-basket-LD3uil6g.png" />
 
   <div class="video">
     <iframe
@@ -1378,378 +1379,89 @@
 <!-- src="src/assets/images/main/wood.png"  -->
 
 
-        <section class="clients-info">
-          <div class="clients-info__container">
-            <h2 class="clients-info__title">
-              Оптовым и корпоративным клиентам
-            </h2>
+        <section class="production">
+          <div class="production__container">
 
-            <div class="clients-info__inner">
-              <div class="clients-info__content">
-                <div class="clients-info__text-box">
-                  <p class="clients-info__text">
-                    Сельскохозяйственный обслуживающий кооператив “Орех
-                    Причерноморья” предлагает своим клиентам выгодные условия
-                    сотрудничества.
-                  </p>
+            <div class="production__filter-box dropdown">
+              <div data-path="filter" class="dropdown__drop-box dropdown__drop-box_filter">
+                <p class="dropdown__fiter-text">Фильтр</p>
 
-                  <p class="clients-info__text">
-                    Особые условия подготовлены для
-                    <span class="clients-info__text-strong"
-                      >розничных магазинов, компаний HoReCa, спорт -
-                      клубов.</span
-                    >
-                  </p>
-                </div>
+                <svg class="dropdown__filter-svg">
+                  <use href="#filter"></use>
+                </svg>
 
-                <div class="clients-info__text-box">
-                  <p class="clients-info__text">
-                    Мы готовы рассмотреть особые условия для оптовых
-                    покупателей, с готовностью идем на встречу любому
-                    предложению.
-                  </p>
+                <ul data-target="filter" class="dropdown__menu">
+                  <li class="dropdown__menu-item">Кукуруза</li>
+                  <li class="dropdown__menu-item">Миндаль</li>
+                  <li class="dropdown__menu-item">Кешью</li>
+                </ul>
+              </div>
+            </div>
 
-                  <p class="clients-info__text">
-                    Если вы заинтересованы в нашей продукции, пишите, или
-                    звоните в наш главный офис - мы всегда пойдем вам на
-                    встречу!
-                  </p>
+            <div class="production__inp-box">
+              <div class="production__filter-box dropdown">
+                <div data-path="taste" class="dropdown__drop-box dropdown__drop-box_inp">
+                  <p class="dropdown__fiter-text">Вкус</p>
+
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_inp">
+                    <use href="#arrow-down"></use>
+                  </svg>
+
+                  <ul data-target="taste" class="dropdown__menu">
+                    <li class="dropdown__menu-item">Сладкий</li>
+                    <li class="dropdown__menu-item">Соленый</li>
+                    <li class="dropdown__menu-item">безвкусный</li>
+                  </ul>
                 </div>
               </div>
+
+              <div class="production__filter-box dropdown">
+                <div data-path="weight" class="dropdown__drop-box dropdown__drop-box_inp-sec">
+                  <p class="dropdown__fiter-text">Масса</p>
+
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_inp">
+                    <use href="#arrow-down"></use>
+                  </svg>
+
+                  <ul data-target="weight" class="dropdown__menu">
+                    <li class="dropdown__menu-item">до 20</li>
+                    <li class="dropdown__menu-item">от 21 до 100</li>
+                    <li class="dropdown__menu-item">Свыше 100</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="production__filter-box production__filter-box_cost dropdown">
+              <div class="dropdown__drop-box dropdown__drop-box_cost">
+                <p class="dropdown__fiter-text">Стоимость</p>
+
+                <div class="dropdown__svg-box">
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_arr">
+                    <use href="#arrow-small"></use>
+                  </svg>
+                  <svg class="dropdown__filter-svg dropdown__filter-svg_rot">
+                  <use href="#arrow-small"></use>
+                </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="production__filter-buttons">
+              <button class="button button-green production__active-filter">
+                Применить
+              </button>
+
+              <button class="button-reset">
+                <svg class="button-reset__svg">
+                  <use href="#filter-reset"></use>
+                </svg>
+
+                Сбросить
+              </button>
             </div>
           </div>
         </section>
-
-        <section class="payment">
-          <div class="payment__container">
-            <div class="tabs tabs_clients">
-              <div class="tabs__tab tabs__tab_active" data-tab="#tab1">
-                <svg class="tabs__svg tabs__svg_supermarket">
-                  <use href="#supermarket"></use>
-                </svg>
-
-                <p class="tabs__text tabs__text_first">Крупные супермаркеты</p>
-              </div>
-
-              <div class="tabs__tab" data-tab="#tab2">
-                <svg class="tabs__svg tabs__svg_cafe">
-                  <use href="#cafe"></use>
-                </svg>
-
-                <p class="tabs__text tabs__text_second">Розничные магазины</p>
-              </div>
-
-              <div class="tabs__tab" data-tab="#tab3">
-                <svg class="tabs__svg tabs__svg_restaurant">
-                  <use href="#restaurant"></use>
-                </svg>
-
-                <p class="tabs__text tabs__text_third">Компании HoReCa</p>
-              </div>
-
-              <div class="tabs__tab" data-tab="#tab4">
-                <svg class="tabs__svg tabs__svg_sport-inv">
-                  <use href="#sport-inv"></use>
-                </svg>
-
-                <p class="tabs__text tabs__text_fourth">Фитнес и спорт клубы</p>
-              </div>
-
-              <div class="tabs__tab" data-tab="#tab5">
-                <svg class="tabs__svg tabs__svg_cake">
-                  <use href="#cake"></use>
-                </svg>
-
-                <p class="tabs__text tabs__text_fivth">
-                  Кондитерские и пекарни
-                </p>
-              </div>
-            </div>
-
-            <div class="payment__content payment__content_active" id="tab1">
-              <div class="payment__content-info">
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    СОК "Орех Причерноморья" предлагает своим клиентам выгодные
-                    условия сорудничества.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Мы готовы рассмотреть особые условия для оптовых
-                    покупателей, с готовностью идем на встречу к любому
-                    предложению.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Особые условия подготовленны для розничных магазинов.
-                    компаний HoReCa, спорт-клубов.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Если вы заинтересованы в нашей продукции, пишите или звоните
-                    в наш главный офис, мы всегда пойдем вам на встречу.
-                  </p>
-                </div>
-
-                <a href="#" class="button button-green">Написать нам</a>
-              </div>
-
-              <img
-                src="/Nuts/assets/basket-in-shop-BjBU41t5.png"
-                alt=""
-                class="payment__content-img"
-              />
-            </div>
-
-            <div class="payment__content" id="tab2">
-              <div class="payment__content-info">
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    СОК "Орех Причерноморья" предлагает своим клиентам выгодные
-                    условия сорудничества.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Мы готовы рассмотреть особые условия для оптовых
-                    покупателей, с готовностью идем на встречу к любому
-                    предложению.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Особые условия подготовленны для розничных магазинов.
-                    компаний HoReCa, спорт-клубов.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Если вы заинтересованы в нашей продукции, пишите или звоните
-                    в наш главный офис, мы всегда пойдем вам на встречу.
-                  </p>
-                </div>
-
-                <a href="#" class="button button-green">Написать нам</a>
-              </div>
-
-              <img
-                src="/Nuts/assets/director-BqMwnfME.png"
-                alt=""
-                class="payment__content-img"
-              />
-            </div>
-
-            <div class="payment__content" id="tab3">
-              <div class="payment__content-info">
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    СОК "Орех Причерноморья" предлагает своим клиентам выгодные
-                    условия сорудничества.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Мы готовы рассмотреть особые условия для оптовых
-                    покупателей, с готовностью идем на встречу к любому
-                    предложению.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Особые условия подготовленны для розничных магазинов.
-                    компаний HoReCa, спорт-клубов.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Если вы заинтересованы в нашей продукции, пишите или звоните
-                    в наш главный офис, мы всегда пойдем вам на встречу.
-                  </p>
-                </div>
-
-                <a href="#" class="button button-green">Написать нам</a>
-              </div>
-
-              <img
-                src="/Nuts/assets/slider-1-Ds-laauf.png"
-                alt=""
-                class="payment__content-img"
-              />
-            </div>
-
-            <div class="payment__content" id="tab4">
-              <div class="payment__content-info">
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    СОК "Орех Причерноморья" предлагает своим клиентам выгодные
-                    условия сорудничества.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Мы готовы рассмотреть особые условия для оптовых
-                    покупателей, с готовностью идем на встречу к любому
-                    предложению.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Особые условия подготовленны для розничных магазинов.
-                    компаний HoReCa, спорт-клубов.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Если вы заинтересованы в нашей продукции, пишите или звоните
-                    в наш главный офис, мы всегда пойдем вам на встречу.
-                  </p>
-                </div>
-
-                <a href="#" class="button button-green">Написать нам</a>
-              </div>
-
-              <img
-                src="/Nuts/assets/wood-Bq2x3KAo.png"
-                alt=""
-                class="payment__content-img"
-              />
-            </div>
-
-            <div class="payment__content" id="tab5">
-              <div class="payment__content-info">
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    СОК "Орех Причерноморья" предлагает своим клиентам выгодные
-                    условия сорудничества.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Мы готовы рассмотреть особые условия для оптовых
-                    покупателей, с готовностью идем на встречу к любому
-                    предложению.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Особые условия подготовленны для розничных магазинов.
-                    компаний HoReCa, спорт-клубов.
-                  </p>
-                </div>
-
-                <div class="payment__content-info-box">
-                  <p class="payment__content-text">
-                    Если вы заинтересованы в нашей продукции, пишите или звоните
-                    в наш главный офис, мы всегда пойдем вам на встречу.
-                  </p>
-                </div>
-
-                <a href="#" class="button button-green">Написать нам</a>
-              </div>
-
-              <img
-                src="/Nuts/assets/gallary-promo-BmJSUFF6.png"
-                alt=""
-                class="payment__content-img"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section class="advantages advantages_sec-var">
-  <div class="advantages__container">
-    <dl class="advantages__list">
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number">240</dd>
-        <dt class="advantages__list-text advantages__list-text_first">Cмешанных садов</dt>
-      </div>
-
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number">1</dd>
-        <dt class="advantages__list-text advantages__list-text_second">Тепличного комплекса</dt>
-      </div>
-
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number">10</dd>
-        <dt class="advantages__list-text">
-          Первая промышленная плантация шиповника в Украине
-        </dt>
-      </div>
-
-      <div class="advantages__list-container">
-        <dd class="advantages__list-number advantages__list-number_last">80</dd>
-        <dt class="advantages__list-text advantages__list-text_fourth">Приживаемости саженцев</dt>
-      </div>
-    </dl>
-  </div>
-</section>
-
-
-        <section class="promo promo_big promo_sec-var ">
-  <div class="promo__container">
-
-    <div class="promo__pos-links">
-      <a href="/index.html" class="promo__pos-link">Главная</a>
-      <svg class="promo__pos-svg">
-        <use href="#arrow-left"></use>
-      </svg>
-      <p class="promo__pos-text">{=$currentPosition}</p>
-    </div>
-
-    <div class="promo__content">
-      <h1 class="promo__title">Эко продукция</h1>
-
-      <p class="promo__text">Выращиваем каждое деревцо с любовью, на экологически 
-чистой земле, без использования пестицидов и химии</p>
-
-      <a href="#" class="promo__video-link">
-        <svg class="promo__svg">
-          <use href="#eco"></use>
-        </svg>
-      </a>
-
-      <p class="promo__descr-text">Cмотреть видео о производстве</p>
-    </div>
-  </div>
-  <img class="promo__img" alt="photo" src="/Nuts/assets/girl-with-tree-DR1b2v46.png" />
-
-  <div class="video">
-    <iframe
-      width="100%"
-      height="100%"
-      src="https://www.youtube.com/embed/hT4O8VI__XE?si=H1z3tfFuYTZChBhE"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </div>
-
-  <svg class="video-close">
-    <use href="#menu-close"></use>
-  </svg>
-</section>
-
-<!-- src="src/assets/images/main/wood.png"  -->
-
 
         <section class="section contacts">
   <div class="contacts__container">
